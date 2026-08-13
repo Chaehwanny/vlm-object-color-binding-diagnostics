@@ -1,0 +1,45 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "four_image_qc_review_v1.1.schema.json",
+  "title": "Four-Image Human QC Review v1.1",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schema_version", "subset_name", "candidate_id", "criteria",
+    "controlled_qc_status", "four_image_qc_status", "failure_reasons",
+    "review_note", "reviewer", "review_timestamp"
+  ],
+  "properties": {
+    "schema_version": {"const": "1.1"},
+    "subset_name": {"type": "string", "minLength": 1},
+    "candidate_id": {"type": "string", "minLength": 1},
+    "criteria": {
+      "type": "object", "additionalProperties": false,
+      "required": [
+        "controlled_original_identity", "controlled_edited_identity",
+        "original_color_binding", "edited_color_binding", "edited_cutout_reuse",
+        "placement_consistency", "relative_scale_preservation", "overlap_and_clipping",
+        "background_margin_alpha_quality", "four_image_prompt_answer_validity"
+      ],
+      "properties": {
+        "controlled_original_identity": {"$ref": "#/$defs/status"},
+        "controlled_edited_identity": {"$ref": "#/$defs/status"},
+        "original_color_binding": {"$ref": "#/$defs/status"},
+        "edited_color_binding": {"$ref": "#/$defs/status"},
+        "edited_cutout_reuse": {"$ref": "#/$defs/status"},
+        "placement_consistency": {"$ref": "#/$defs/status"},
+        "relative_scale_preservation": {"$ref": "#/$defs/status"},
+        "overlap_and_clipping": {"$ref": "#/$defs/status"},
+        "background_margin_alpha_quality": {"$ref": "#/$defs/status"},
+        "four_image_prompt_answer_validity": {"$ref": "#/$defs/status"}
+      }
+    },
+    "controlled_qc_status": {"$ref": "#/$defs/status"},
+    "four_image_qc_status": {"$ref": "#/$defs/status"},
+    "failure_reasons": {"type": "array", "items": {"type": "string"}, "uniqueItems": true},
+    "review_note": {"type": ["string", "null"]},
+    "reviewer": {"type": ["string", "null"]},
+    "review_timestamp": {"type": ["string", "null"], "format": "date-time"}
+  },
+  "$defs": {"status": {"enum": ["pass", "fail", "human_review", "not_tested"]}}
+}

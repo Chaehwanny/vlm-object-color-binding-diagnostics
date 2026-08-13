@@ -1,0 +1,56 @@
+{
+  "schema_version": "1.1",
+  "config_id": "attribute_binding_segmentation_smoke_v1.1",
+  "seed": 20260731,
+  "model": {
+    "model_id": "facebook/sam-vit-base",
+    "revision": "70c1a07f894ebb5b307fd9eaaee97b9dfc16068f",
+    "local_files_only": true,
+    "trust_remote_code": false
+  },
+  "inference": {
+    "device": "auto",
+    "cuda_dtype": "float16",
+    "cpu_dtype": "float32",
+    "multimask_output": true,
+    "mask_selection": "highest_predicted_iou",
+    "prompt_type": "scene_graph_bbox_xyxy",
+    "deterministic_algorithms": true,
+    "cudnn_benchmark": false,
+    "cudnn_deterministic": true
+  },
+  "scope": {
+    "required_pilot_subset": "smoke",
+    "required_candidate_count": 5,
+    "allowed_semantic_status": [
+      "valid"
+    ],
+    "allowed_technical_status": [
+      "directly_editable",
+      "segmentation_test_required"
+    ],
+    "development_exposure_required": true
+  },
+  "automatic_diagnostic_flags": {
+    "near_empty_image_fraction": 0.001,
+    "outside_bbox_mask_fraction_warning": 0.1,
+    "ab_mask_iou_warning": 0.1,
+    "ab_intersection_over_smaller_mask_warning": 0.25
+  },
+  "qc_policy": {
+    "automatic_flags_assign_final_status": false,
+    "initial_mask_qc_status": "not_tested",
+    "human_review_required": true,
+    "technical_status_update_requires_human_qc": true
+  },
+  "output_layout": {
+    "masks_dir": "masks",
+    "cutouts_dir": "cutouts",
+    "overlays_dir": "overlays",
+    "records_dir": "records",
+    "run_metadata": "segmentation_run_metadata_v1.1.json",
+    "result_manifest": "mask_results_smoke_5_v1.1.jsonl",
+    "qc_template": "mask_qc_review_template_smoke_5_v1.1.jsonl",
+    "run_summary": "segmentation_run_summary_v1.1.json"
+  }
+}

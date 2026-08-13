@@ -1,0 +1,508 @@
+{
+  "schema_version": "1.2",
+  "analysis_contract": "natural_primary_attribute_binding_v1.2_parser_amendment1",
+  "governing_protocol": "docs/protocols/protocol_v1.2_PRE_INFERENCE_AMENDMENT.md",
+  "metric_dictionary": "docs/protocols/metric_dictionary_v1.1.md",
+  "statistical_analysis_plan": "docs/protocols/statistical_analysis_plan_v1.1.md",
+  "query_manifest": "data/manifests/attribute_binding/primary_queries_v1.2.jsonl",
+  "query_manifest_sha256": "1b79c0b0009899c38c11fe1fe6f2454bd1f4e9f5fe5612a11db1750a0ffdf64f",
+  "candidate_n": 91,
+  "query_n": 546,
+  "interval_policy": "Wilson 95% interval for descriptive proportions",
+  "bootstrap_status": "not_applied: no Natural-Controlled difference was analyzed and the frozen SAP does not specify a bootstrap interval construction method",
+  "model_results": [
+    {
+      "model_key": "qwen3_vl_8b_instruct",
+      "model_id": "Qwen/Qwen3-VL-8B-Instruct",
+      "model_revision": "0c351dd01ed87e9c1b53cbc748cba10e6187ff3b",
+      "source_result_manifest": "processed/attribute_binding/primary_inference/v1.2/qwen3_vl_8b_instruct_parser_amendment1.jsonl",
+      "source_result_sha256": "1fcb77d9019358f26c606d7e66e5da49fc25ce1f6ac037e14138bebbd93524e1",
+      "structural_counts": {
+        "candidates": 91,
+        "queries": 546,
+        "valid": 546,
+        "invalid": 0,
+        "inference_errors": 0
+      },
+      "metrics": {
+        "OBA": {
+          "numerator": 90,
+          "denominator": 91,
+          "rate": 0.989010989010989,
+          "percent": 98.9010989010989,
+          "wilson_95_ci": {
+            "low": 0.9403506433134939,
+            "high": 0.9980575286681509
+          }
+        },
+        "EBA": {
+          "numerator": 84,
+          "denominator": 91,
+          "rate": 0.9230769230769231,
+          "percent": 92.3076923076923,
+          "wilson_95_ci": {
+            "low": 0.849640728767747,
+            "high": 0.962240498677047
+          }
+        },
+        "PBC": {
+          "numerator": 83,
+          "denominator": 91,
+          "rate": 0.9120879120879121,
+          "percent": 91.20879120879121,
+          "wilson_95_ci": {
+            "low": 0.8360136111636226,
+            "high": 0.954779792191696
+          }
+        },
+        "CRF": {
+          "numerator": 0,
+          "denominator": 48,
+          "rate": 0.0,
+          "percent": 0.0,
+          "wilson_95_ci": {
+            "low": 6.938893903907228e-18,
+            "high": 0.07410012966611748
+          }
+        }
+      },
+      "crf_eligible_n": 48,
+      "crf_failure_n": 0,
+      "all_pass_n": 48,
+      "crf_failure_candidate_ids": [],
+      "stages": {
+        "original_atomic_color_failure": {
+          "numerator": 13,
+          "denominator": 91,
+          "rate": 0.14285714285714285,
+          "percent": 14.285714285714285,
+          "wilson_95_ci": {
+            "low": 0.08542758136548777,
+            "high": 0.22921813572656952
+          }
+        },
+        "original_binding_failure_after_atomic_pass": {
+          "numerator": 0,
+          "denominator": 91,
+          "rate": 0.0,
+          "percent": 0.0,
+          "wilson_95_ci": {
+            "low": 0.0,
+            "high": 0.04050400392888021
+          }
+        },
+        "edited_atomic_color_failure_after_original_pass": {
+          "numerator": 30,
+          "denominator": 91,
+          "rate": 0.32967032967032966,
+          "percent": 32.967032967032964,
+          "wilson_95_ci": {
+            "low": 0.24170900529290465,
+            "high": 0.4314297213202305
+          }
+        },
+        "conditional_rebinding_failure": {
+          "numerator": 0,
+          "denominator": 91,
+          "rate": 0.0,
+          "percent": 0.0,
+          "wilson_95_ci": {
+            "low": 0.0,
+            "high": 0.04050400392888021
+          }
+        },
+        "full_paired_pass": {
+          "numerator": 48,
+          "denominator": 91,
+          "rate": 0.5274725274725275,
+          "percent": 52.74725274725275,
+          "wilson_95_ci": {
+            "low": 0.42587759658425334,
+            "high": 0.6268419636394346
+          }
+        }
+      },
+      "sanity_checks": {
+        "stage_sum": 91,
+        "crf_failures_subset_of_eligible": true,
+        "all_pass_subset_of_eligible": true,
+        "eligible_equals_crf_failure_plus_all_pass": true
+      }
+    },
+    {
+      "model_key": "internvl3_5_8b_instruct",
+      "model_id": "OpenGVLab/InternVL3_5-8B-Instruct",
+      "model_revision": "27506812aa9914804018996329e895977ee2d0c8",
+      "source_result_manifest": "processed/attribute_binding/primary_inference/v1.2/internvl3_5_8b_instruct_parser_amendment1.jsonl",
+      "source_result_sha256": "8847b582aa562bf68e69460ef5de8ac6c54446598005ee03c523baccb148d028",
+      "structural_counts": {
+        "candidates": 91,
+        "queries": 546,
+        "valid": 546,
+        "invalid": 0,
+        "inference_errors": 0
+      },
+      "metrics": {
+        "OBA": {
+          "numerator": 90,
+          "denominator": 91,
+          "rate": 0.989010989010989,
+          "percent": 98.9010989010989,
+          "wilson_95_ci": {
+            "low": 0.9403506433134939,
+            "high": 0.9980575286681509
+          }
+        },
+        "EBA": {
+          "numerator": 85,
+          "denominator": 91,
+          "rate": 0.9340659340659341,
+          "percent": 93.4065934065934,
+          "wilson_95_ci": {
+            "low": 0.8635353380058843,
+            "high": 0.9694337135283846
+          }
+        },
+        "PBC": {
+          "numerator": 85,
+          "denominator": 91,
+          "rate": 0.9340659340659341,
+          "percent": 93.4065934065934,
+          "wilson_95_ci": {
+            "low": 0.8635353380058843,
+            "high": 0.9694337135283846
+          }
+        },
+        "CRF": {
+          "numerator": 0,
+          "denominator": 49,
+          "rate": 0.0,
+          "percent": 0.0,
+          "wilson_95_ci": {
+            "low": 6.938893903907228e-18,
+            "high": 0.07269781922049637
+          }
+        }
+      },
+      "crf_eligible_n": 49,
+      "crf_failure_n": 0,
+      "all_pass_n": 49,
+      "crf_failure_candidate_ids": [],
+      "stages": {
+        "original_atomic_color_failure": {
+          "numerator": 15,
+          "denominator": 91,
+          "rate": 0.16483516483516483,
+          "percent": 16.483516483516482,
+          "wilson_95_ci": {
+            "low": 0.10251430933651492,
+            "high": 0.25430705593449277
+          }
+        },
+        "original_binding_failure_after_atomic_pass": {
+          "numerator": 0,
+          "denominator": 91,
+          "rate": 0.0,
+          "percent": 0.0,
+          "wilson_95_ci": {
+            "low": 0.0,
+            "high": 0.04050400392888021
+          }
+        },
+        "edited_atomic_color_failure_after_original_pass": {
+          "numerator": 27,
+          "denominator": 91,
+          "rate": 0.2967032967032967,
+          "percent": 29.67032967032967,
+          "wilson_95_ci": {
+            "low": 0.21263490271484697,
+            "high": 0.3972403516298626
+          }
+        },
+        "conditional_rebinding_failure": {
+          "numerator": 0,
+          "denominator": 91,
+          "rate": 0.0,
+          "percent": 0.0,
+          "wilson_95_ci": {
+            "low": 0.0,
+            "high": 0.04050400392888021
+          }
+        },
+        "full_paired_pass": {
+          "numerator": 49,
+          "denominator": 91,
+          "rate": 0.5384615384615384,
+          "percent": 53.84615384615385,
+          "wilson_95_ci": {
+            "low": 0.43656172336109367,
+            "high": 0.6372456609520694
+          }
+        }
+      },
+      "sanity_checks": {
+        "stage_sum": 91,
+        "crf_failures_subset_of_eligible": true,
+        "all_pass_subset_of_eligible": true,
+        "eligible_equals_crf_failure_plus_all_pass": true
+      }
+    },
+    {
+      "model_key": "gemma3_12b_it",
+      "model_id": "google/gemma-3-12b-it",
+      "model_revision": "96b6f1eccf38110c56df3a15bffe176da04bfd80",
+      "source_result_manifest": "processed/attribute_binding/primary_inference/v1.2/gemma3_12b_it_parser_amendment1.jsonl",
+      "source_result_sha256": "ad8d9116422fa28fc58c02964ca0377a0fa5ed009b58c80d45ebe08002d21812",
+      "structural_counts": {
+        "candidates": 91,
+        "queries": 546,
+        "valid": 546,
+        "invalid": 0,
+        "inference_errors": 0
+      },
+      "metrics": {
+        "OBA": {
+          "numerator": 87,
+          "denominator": 91,
+          "rate": 0.9560439560439561,
+          "percent": 95.6043956043956,
+          "wilson_95_ci": {
+            "low": 0.8923690661573366,
+            "high": 0.9827756335558827
+          }
+        },
+        "EBA": {
+          "numerator": 77,
+          "denominator": 91,
+          "rate": 0.8461538461538461,
+          "percent": 84.61538461538461,
+          "wilson_95_ci": {
+            "low": 0.7581785928776223,
+            "high": 0.9060878659408453
+          }
+        },
+        "PBC": {
+          "numerator": 73,
+          "denominator": 91,
+          "rate": 0.8021978021978022,
+          "percent": 80.21978021978022,
+          "wilson_95_ci": {
+            "low": 0.708859763030568,
+            "high": 0.871055399429999
+          }
+        },
+        "CRF": {
+          "numerator": 0,
+          "denominator": 27,
+          "rate": 0.0,
+          "percent": 0.0,
+          "wilson_95_ci": {
+            "low": 0.0,
+            "high": 0.12455502974186705
+          }
+        }
+      },
+      "crf_eligible_n": 27,
+      "crf_failure_n": 0,
+      "all_pass_n": 27,
+      "crf_failure_candidate_ids": [],
+      "stages": {
+        "original_atomic_color_failure": {
+          "numerator": 29,
+          "denominator": 91,
+          "rate": 0.31868131868131866,
+          "percent": 31.868131868131865,
+          "wilson_95_ci": {
+            "low": 0.23196000154381546,
+            "high": 0.4200909009798445
+          }
+        },
+        "original_binding_failure_after_atomic_pass": {
+          "numerator": 1,
+          "denominator": 91,
+          "rate": 0.01098901098901099,
+          "percent": 1.098901098901099,
+          "wilson_95_ci": {
+            "low": 0.0019424713318492125,
+            "high": 0.05964935668650616
+          }
+        },
+        "edited_atomic_color_failure_after_original_pass": {
+          "numerator": 34,
+          "denominator": 91,
+          "rate": 0.37362637362637363,
+          "percent": 37.362637362637365,
+          "wilson_95_ci": {
+            "low": 0.28124967514885135,
+            "high": 0.4762403478221844
+          }
+        },
+        "conditional_rebinding_failure": {
+          "numerator": 0,
+          "denominator": 91,
+          "rate": 0.0,
+          "percent": 0.0,
+          "wilson_95_ci": {
+            "low": 0.0,
+            "high": 0.04050400392888021
+          }
+        },
+        "full_paired_pass": {
+          "numerator": 27,
+          "denominator": 91,
+          "rate": 0.2967032967032967,
+          "percent": 29.67032967032967,
+          "wilson_95_ci": {
+            "low": 0.21263490271484697,
+            "high": 0.3972403516298626
+          }
+        }
+      },
+      "sanity_checks": {
+        "stage_sum": 91,
+        "crf_failures_subset_of_eligible": true,
+        "all_pass_subset_of_eligible": true,
+        "eligible_equals_crf_failure_plus_all_pass": true
+      }
+    },
+    {
+      "model_key": "llava_onevision2_8b_instruct",
+      "model_id": "lmms-lab-encoder/LLaVA-OneVision-2-8B-Instruct",
+      "model_revision": "802f16c8346a062fef7ddf92b2bd64a770a50a1a",
+      "source_result_manifest": "processed/attribute_binding/primary_inference/v1.2/llava_onevision2_8b_instruct_parser_amendment1.jsonl",
+      "source_result_sha256": "0509f1d3cafd767f5703998fec8186045edb7029dd0b573d1d72525a4150d8f1",
+      "structural_counts": {
+        "candidates": 91,
+        "queries": 546,
+        "valid": 546,
+        "invalid": 0,
+        "inference_errors": 0
+      },
+      "metrics": {
+        "OBA": {
+          "numerator": 90,
+          "denominator": 91,
+          "rate": 0.989010989010989,
+          "percent": 98.9010989010989,
+          "wilson_95_ci": {
+            "low": 0.9403506433134939,
+            "high": 0.9980575286681509
+          }
+        },
+        "EBA": {
+          "numerator": 87,
+          "denominator": 91,
+          "rate": 0.9560439560439561,
+          "percent": 95.6043956043956,
+          "wilson_95_ci": {
+            "low": 0.8923690661573366,
+            "high": 0.9827756335558827
+          }
+        },
+        "PBC": {
+          "numerator": 86,
+          "denominator": 91,
+          "rate": 0.945054945054945,
+          "percent": 94.5054945054945,
+          "wilson_95_ci": {
+            "low": 0.8777519753271708,
+            "high": 0.9763049002965734
+          }
+        },
+        "CRF": {
+          "numerator": 0,
+          "denominator": 49,
+          "rate": 0.0,
+          "percent": 0.0,
+          "wilson_95_ci": {
+            "low": 6.938893903907228e-18,
+            "high": 0.07269781922049637
+          }
+        }
+      },
+      "crf_eligible_n": 49,
+      "crf_failure_n": 0,
+      "all_pass_n": 49,
+      "crf_failure_candidate_ids": [],
+      "stages": {
+        "original_atomic_color_failure": {
+          "numerator": 15,
+          "denominator": 91,
+          "rate": 0.16483516483516483,
+          "percent": 16.483516483516482,
+          "wilson_95_ci": {
+            "low": 0.10251430933651492,
+            "high": 0.25430705593449277
+          }
+        },
+        "original_binding_failure_after_atomic_pass": {
+          "numerator": 1,
+          "denominator": 91,
+          "rate": 0.01098901098901099,
+          "percent": 1.098901098901099,
+          "wilson_95_ci": {
+            "low": 0.0019424713318492125,
+            "high": 0.05964935668650616
+          }
+        },
+        "edited_atomic_color_failure_after_original_pass": {
+          "numerator": 26,
+          "denominator": 91,
+          "rate": 0.2857142857142857,
+          "percent": 28.57142857142857,
+          "wilson_95_ci": {
+            "low": 0.2030621447604496,
+            "high": 0.3857252854947848
+          }
+        },
+        "conditional_rebinding_failure": {
+          "numerator": 0,
+          "denominator": 91,
+          "rate": 0.0,
+          "percent": 0.0,
+          "wilson_95_ci": {
+            "low": 0.0,
+            "high": 0.04050400392888021
+          }
+        },
+        "full_paired_pass": {
+          "numerator": 49,
+          "denominator": 91,
+          "rate": 0.5384615384615384,
+          "percent": 53.84615384615385,
+          "wilson_95_ci": {
+            "low": 0.43656172336109367,
+            "high": 0.6372456609520694
+          }
+        }
+      },
+      "sanity_checks": {
+        "stage_sum": 91,
+        "crf_failures_subset_of_eligible": true,
+        "all_pass_subset_of_eligible": true,
+        "eligible_equals_crf_failure_plus_all_pass": true
+      }
+    }
+  ],
+  "cross_model_crf_overlap": {
+    "matched_candidate_n": 91,
+    "model_observations_are_not_pooled": true,
+    "candidate_to_failing_models": {},
+    "failure_ids_by_model_count": {
+      "1": [],
+      "2": [],
+      "3": [],
+      "4": []
+    },
+    "one_model_only": [],
+    "two_or_more_models": [],
+    "exact_model_combinations": {}
+  },
+  "global_sanity_checks": {
+    "model_count": 4,
+    "candidate_count_each": true,
+    "query_count_each": true,
+    "six_queries_per_candidate": true,
+    "all_checks_pass": true
+  }
+}

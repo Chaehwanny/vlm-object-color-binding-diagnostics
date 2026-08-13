@@ -1,0 +1,13 @@
+{
+  "schema_version": "1.2",
+  "candidate_domain": 91,
+  "primary_question_candidate_count": 91,
+  "reference_attrition_count": 0,
+  "item_count": 546,
+  "items_per_candidate": 6,
+  "output_manifest": "data/manifests/attribute_binding/primary_queries_v1.2.jsonl",
+  "output_manifest_sha256": "1b79c0b0009899c38c11fe1fe6f2454bd1f4e9f5fe5612a11db1750a0ffdf64f",
+  "config": "configs/attribute_binding/primary_qa_v1.2.json",
+  "config_sha256": "7c6743fc6dfd30bbfe0276ea3747ef6d160df7ca7557e870f678e591606a7096",
+  "generated_at": "2026-08-04T14:33:30.313943+00:00"
+}

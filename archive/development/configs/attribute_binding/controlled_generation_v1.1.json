@@ -1,0 +1,64 @@
+{
+  "schema_version": "1.1",
+  "config_id": "attribute_binding_controlled_generation_v1.1",
+  "frozen": false,
+  "seed": 20260731,
+  "canvas": {
+    "width": 1024,
+    "height": 768,
+    "background_rgb": [224, 224, 224],
+    "outer_margin_pixels": 80,
+    "minimum_inter_object_gap_pixels": 96
+  },
+  "placement": {
+    "method": "natural_x_order_centered_shared_global_scale_v1",
+    "preserve_natural_x_order": true,
+    "preserve_relative_pixel_scale": true,
+    "default_global_scale_factor": 1.0,
+    "allow_downscale_only": true,
+    "same_scale_for_both_objects": true,
+    "vertical_alignment": "center",
+    "horizontal_group_alignment": "center",
+    "rotation_degrees": 0,
+    "object_overlap_allowed": false,
+    "resampling_rgb": "lanczos",
+    "resampling_alpha": "lanczos"
+  },
+  "subset_expected_counts": {
+    "smoke": 5,
+    "mini": 10,
+    "completion": 25
+  },
+  "required_input_status": {
+    "mask_qc_status": "pass",
+    "edit_qc_status": "pass",
+    "object_identity_preservation_status": "pass"
+  },
+  "initial_output_status": {
+    "controlled_qc_status": "not_tested",
+    "four_image_qc_status": "not_tested"
+  },
+  "automatic_diagnostics": {
+    "threshold_status": "provisional_not_frozen",
+    "minimum_global_scale_warning": 0.75,
+    "maximum_alpha_boundary_fraction_warning": 0.15,
+    "maximum_non_object_difference_pixels": 0,
+    "maximum_object_overlap_pixels": 0,
+    "minimum_margin_pixels": 40
+  },
+  "qc_policy": {
+    "automatic_metrics_assign_final_status": false,
+    "human_review_required": true
+  },
+  "output_layout": {
+    "controlled_original_dir": "controlled_original",
+    "controlled_edited_dir": "controlled_edited",
+    "contact_sheets_dir": "four_image_contact_sheets",
+    "placement_previews_dir": "placement_previews",
+    "records_dir": "records",
+    "run_metadata": "controlled_generation_run_metadata_v1.1.json",
+    "result_manifest_template": "controlled_generation_results_{subset}_v1.1.jsonl",
+    "qc_template_template": "four_image_qc_review_template_{subset}_v1.1.jsonl",
+    "run_summary_template": "controlled_generation_summary_{subset}_v1.1.json"
+  }
+}

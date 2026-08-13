@@ -1,0 +1,77 @@
+{
+  "schema_version": "1.2",
+  "contract_version": "primary_inference_v1.2_parser_amendment1",
+  "primary_query_manifest": "data/manifests/attribute_binding/primary_queries_v1.2.jsonl",
+  "primary_query_manifest_sha256": "1b79c0b0009899c38c11fe1fe6f2454bd1f4e9f5fe5612a11db1750a0ffdf64f",
+  "primary_freeze_manifest": "frozen/attribute_binding_primary_v1.2/primary_freeze_manifest_v1.2.json",
+  "primary_freeze_manifest_sha256": "6c8c00aee727330cc44ddcdbf4b182e4eb70474d5780da2416169d6b8d4926c3",
+  "primary_candidate_fingerprint": "1ef62448c53322c9519f7e4a9f67cc8af6ec7d15ee28ce06e2705b4e90d21d2b",
+  "primary_query_fingerprint": "5cf40c94a73c22db4ed11a4b5881f586ccc852894d53f232962233b8fa1fb605",
+  "expected_candidate_count": 91,
+  "expected_query_count": 546,
+  "common": {
+    "stateless": true,
+    "batch_size": 1,
+    "dtype": "bfloat16",
+    "do_sample": false,
+    "num_beams": 1,
+    "max_new_tokens": 16,
+    "temperature": null,
+    "top_p": null,
+    "top_k": null,
+    "response_instruction": "Answer with only the option letter.",
+    "raw_output_preservation": true,
+    "invalid_policy": "incorrect_and_report_separately",
+    "inference_error_policy": "separate_from_invalid_response",
+    "parser_contract_version": "leading_option_identifier_v1.2_amendment1"
+  },
+  "models": {
+    "qwen3_vl_8b_instruct": {
+      "model_id": "Qwen/Qwen3-VL-8B-Instruct",
+      "model_revision": "0c351dd01ed87e9c1b53cbc748cba10e6187ff3b",
+      "processor_revision": "0c351dd01ed87e9c1b53cbc748cba10e6187ff3b",
+      "trust_remote_code": false,
+      "adapter": "qwen3_vl",
+      "loader_class": "Qwen3VLForConditionalGeneration",
+      "software_environment_id": "primary_vlm_tf457_v1",
+      "attention_policy": "sdpa",
+      "preprocessing_policy": "pinned_official_auto_processor"
+    },
+    "internvl3_5_8b_instruct": {
+      "model_id": "OpenGVLab/InternVL3_5-8B-Instruct",
+      "model_revision": "27506812aa9914804018996329e895977ee2d0c8",
+      "processor_revision": "27506812aa9914804018996329e895977ee2d0c8",
+      "trust_remote_code": true,
+      "adapter": "internvl3_5",
+      "loader_class": "AutoModel+AutoTokenizer",
+      "software_environment_id": "primary_vlm_tf457_v1",
+      "attention_policy": "use_flash_attn_false",
+      "preprocessing_policy": "official_dynamic_448_bicubic_imagenet_max_tiles_12",
+      "max_tiles": 12,
+      "thinking_mode": false
+    },
+    "gemma3_12b_it": {
+      "model_id": "google/gemma-3-12b-it",
+      "model_revision": "96b6f1eccf38110c56df3a15bffe176da04bfd80",
+      "processor_revision": "96b6f1eccf38110c56df3a15bffe176da04bfd80",
+      "trust_remote_code": false,
+      "adapter": "gemma3",
+      "loader_class": "Gemma3ForConditionalGeneration",
+      "software_environment_id": "primary_vlm_tf457_v1",
+      "attention_policy": "sdpa",
+      "preprocessing_policy": "pinned_official_auto_processor_896px",
+      "access_requirement": "accepted_gemma_license_and_authenticated_hf_token"
+    },
+    "llava_onevision2_8b_instruct": {
+      "model_id": "lmms-lab-encoder/LLaVA-OneVision-2-8B-Instruct",
+      "model_revision": "802f16c8346a062fef7ddf92b2bd64a770a50a1a",
+      "processor_revision": "802f16c8346a062fef7ddf92b2bd64a770a50a1a",
+      "trust_remote_code": true,
+      "adapter": "llava_onevision2",
+      "loader_class": "AutoModelForImageTextToText+AutoProcessor",
+      "software_environment_id": "primary_vlm_llava_tf57_v1",
+      "attention_policy": "sdpa",
+      "preprocessing_policy": "pinned_official_custom_auto_processor"
+    }
+  }
+}

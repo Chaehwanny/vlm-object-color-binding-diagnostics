@@ -1,0 +1,56 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "natural_edit_qc_review_v1.1.schema.json",
+  "title": "Natural Edited Human QC v1.1",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schema_version", "candidate_id", "criteria", "edit_qc_status",
+    "object_identity_preservation_status", "failure_reasons", "review_note",
+    "reviewer", "review_timestamp", "target_color_change_status",
+    "original_color_residue_status", "outside_mask_preservation_status",
+    "color_leakage_status", "boundary_quality_status",
+    "texture_shading_preservation_status", "target_binding_achievement_status",
+    "prompt_answer_validity_after_edit_status"
+  ],
+  "properties": {
+    "schema_version": {"const": "1.1"},
+    "candidate_id": {"type": "string", "pattern": "^maincand_[0-9]{4}$"},
+    "criteria": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "target_color_change", "original_color_residue", "outside_mask_preservation",
+        "color_leakage", "boundary_quality", "object_identity_preservation",
+        "texture_shading_pattern_preservation", "binding_swap_achieved",
+        "prompt_answer_validity"
+      ],
+      "properties": {
+        "target_color_change": {"$ref": "#/$defs/status"},
+        "original_color_residue": {"$ref": "#/$defs/status"},
+        "outside_mask_preservation": {"$ref": "#/$defs/status"},
+        "color_leakage": {"$ref": "#/$defs/status"},
+        "boundary_quality": {"$ref": "#/$defs/status"},
+        "object_identity_preservation": {"$ref": "#/$defs/status"},
+        "texture_shading_pattern_preservation": {"$ref": "#/$defs/status"},
+        "binding_swap_achieved": {"$ref": "#/$defs/status"},
+        "prompt_answer_validity": {"$ref": "#/$defs/status"}
+      }
+    },
+    "edit_qc_status": {"$ref": "#/$defs/status"},
+    "object_identity_preservation_status": {"$ref": "#/$defs/status"},
+    "target_color_change_status": {"$ref": "#/$defs/status"},
+    "original_color_residue_status": {"$ref": "#/$defs/status"},
+    "outside_mask_preservation_status": {"$ref": "#/$defs/status"},
+    "color_leakage_status": {"$ref": "#/$defs/status"},
+    "boundary_quality_status": {"$ref": "#/$defs/status"},
+    "texture_shading_preservation_status": {"$ref": "#/$defs/status"},
+    "target_binding_achievement_status": {"$ref": "#/$defs/status"},
+    "prompt_answer_validity_after_edit_status": {"$ref": "#/$defs/status"},
+    "failure_reasons": {"type": "array", "items": {"type": "string"}, "uniqueItems": true},
+    "review_note": {"type": ["string", "null"]},
+    "reviewer": {"type": ["string", "null"]},
+    "review_timestamp": {"type": ["string", "null"], "format": "date-time"}
+  },
+  "$defs": {"status": {"enum": ["pass", "fail", "human_review", "not_tested"]}}
+}

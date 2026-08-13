@@ -1,0 +1,25 @@
+{
+  "schema_version": "1.1",
+  "enum_id": "attribute_binding_edit_failure_reasons_v1.1",
+  "failure_reasons": {
+    "insufficient_target_color_change": "The intended object did not move sufficiently toward the target color.",
+    "excessive_original_color_residue": "Too much of the original binding color remains visually dominant.",
+    "outside_mask_change": "Pixels outside the frozen A/B mask union changed.",
+    "color_leakage": "Edited color leaked into another object or surrounding region.",
+    "boundary_artifact": "The edit introduced a material boundary artifact.",
+    "texture_or_shading_destroyed": "Texture, pattern, shading, or surface interpretation was materially damaged.",
+    "object_identity_changed": "The edited object no longer preserves its recognizable identity.",
+    "target_binding_not_achieved": "The intended A/B color reassignment was not achieved.",
+    "prompt_or_answer_invalid_after_edit": "The edited image no longer supports an unambiguous question and answer.",
+    "corrupted_asset": "A required cutout, image, contact sheet, or record is unreadable or inconsistent.",
+    "insufficient_source_color_pixels": "Too few valid source-color pixels were available for deterministic hue estimation.",
+    "mask_overlap_prevents_composition": "Frozen A/B masks overlap and do not permit an unambiguous shared edit.",
+    "other": "A failure not represented above; a human note is mandatory."
+  },
+  "rules": {
+    "automatic_flags_are_not_final_failures": true,
+    "pass_forbids_failure_reasons": true,
+    "fail_requires_failure_reason": true,
+    "other_requires_note": true
+  }
+}

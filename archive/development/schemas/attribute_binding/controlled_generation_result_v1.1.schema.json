@@ -1,0 +1,38 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "controlled_generation_result_v1.1.schema.json",
+  "title": "Controlled Pair Generation Result v1.1",
+  "type": "object",
+  "additionalProperties": true,
+  "required": [
+    "schema_version", "run_id", "subset_name", "candidate_id", "source_image_id",
+    "object_a_label", "object_b_label", "original_color_a", "original_color_b",
+    "target_color_a", "target_color_b", "natural_original_path", "natural_edited_path",
+    "object_a_original_cutout_path", "object_b_original_cutout_path",
+    "object_a_edited_cutout_path", "object_b_edited_cutout_path",
+    "controlled_original_path", "controlled_edited_path", "four_image_contact_sheet_path",
+    "canvas_width", "canvas_height", "background_rgb", "placement_a", "placement_b",
+    "global_scale_factor", "placement_method", "config_sha256", "asset_checksums",
+    "mask_qc_status", "edit_qc_status", "object_identity_preservation_status",
+    "controlled_generation_status", "controlled_qc_status", "four_image_qc_status",
+    "automatic_qc_metrics", "diagnostic_flags", "failure_reasons", "development_exposure"
+  ],
+  "properties": {
+    "schema_version": {"const": "1.1"},
+    "subset_name": {"type": "string", "minLength": 1},
+    "candidate_id": {"type": "string", "minLength": 1},
+    "background_rgb": {
+      "type": "array", "items": {"type": "integer", "minimum": 0, "maximum": 255},
+      "minItems": 3, "maxItems": 3
+    },
+    "global_scale_factor": {"type": "number", "minimum": 0, "maximum": 1},
+    "controlled_generation_status": {"enum": ["generated", "failed"]},
+    "controlled_qc_status": {"enum": ["pass", "fail", "human_review", "not_tested"]},
+    "four_image_qc_status": {"enum": ["pass", "fail", "human_review", "not_tested"]},
+    "failure_reasons": {"type": "array", "items": {"type": "string"}, "uniqueItems": true},
+    "asset_checksums": {"type": "object"},
+    "automatic_qc_metrics": {"type": "object"},
+    "diagnostic_flags": {"type": "array", "items": {"type": "string"}, "uniqueItems": true},
+    "development_exposure": {"type": "boolean"}
+  }
+}

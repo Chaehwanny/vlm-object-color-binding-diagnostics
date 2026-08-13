@@ -1,0 +1,61 @@
+{
+  "schema_version": "1.1",
+  "config_id": "attribute_binding_color_swap_v1.1",
+  "seed": 20260731,
+  "method": {
+    "name": "masked_observed_hue_mean_exchange_hsv_v1",
+    "color_centers_degrees": {
+      "red": 0.0,
+      "yellow": 55.0,
+      "green": 120.0,
+      "blue": 220.0
+    },
+    "source_hue_tolerance_degrees": 55.0,
+    "min_saturation_0_255": 45,
+    "min_value_0_255": 30,
+    "hue_estimator": "saturation_weighted_circular_mean",
+    "target_hue": "paired_object_observed_source_hue",
+    "preserve_saturation": true,
+    "preserve_value": true,
+    "preserve_alpha": true,
+    "change_only_selected_pixels": true,
+    "mask_feathering": false,
+    "generative_model": false
+  },
+  "scope": {
+    "required_mask_qc_status": "pass",
+    "allowed_colors": [
+      "red",
+      "blue",
+      "green",
+      "yellow"
+    ],
+    "development_exposure_required": true
+  },
+  "automatic_diagnostics": {
+    "threshold_status": "provisional_not_frozen",
+    "minimum_selected_mask_fraction_warning": 0.05,
+    "maximum_post_target_hue_distance_warning_degrees": 35.0,
+    "maximum_original_color_residue_warning_fraction": 0.25,
+    "maximum_outside_mask_changed_pixels": 0,
+    "maximum_ab_mask_overlap_pixels": 0
+  },
+  "qc_policy": {
+    "automatic_metrics_assign_final_status": false,
+    "initial_edit_qc_status": "not_tested",
+    "initial_identity_status": "not_tested",
+    "human_review_required": true
+  },
+  "output_layout": {
+    "original_cutouts_dir": "original_cutouts",
+    "edited_cutouts_dir": "edited_cutouts",
+    "natural_edited_dir": "natural_edited",
+    "selected_masks_dir": "selected_color_masks",
+    "contact_sheets_dir": "contact_sheets",
+    "records_dir": "records",
+    "run_metadata": "color_swap_run_metadata_v1.1.json",
+    "result_manifest": "color_edit_results_{subset_name}_v1.1.jsonl",
+    "qc_template": "natural_edit_qc_review_template_{subset_name}_v1.1.jsonl",
+    "run_summary": "color_edit_run_summary_{subset_name}_v1.1.json"
+  }
+}

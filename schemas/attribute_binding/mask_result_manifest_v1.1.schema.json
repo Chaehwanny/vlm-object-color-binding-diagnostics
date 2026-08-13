@@ -1,0 +1,284 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "mask_result_manifest_v1.1.schema.json",
+  "title": "Attribute Binding Mask Result v1.1",
+  "type": "object",
+  "additionalProperties": true,
+  "required": [
+    "schema_version",
+    "mask_test_id",
+    "candidate_id",
+    "source_image_id",
+    "selection_rank",
+    "pilot_subset",
+    "object_a",
+    "object_b",
+    "source_image",
+    "assets",
+    "automatic_metrics",
+    "automatic_diagnostic_flags",
+    "mask_generation_status",
+    "mask_qc_status",
+    "technical_status_before",
+    "technical_status_after_mask_qc",
+    "technical_status_update_approved",
+    "edit_qc_status",
+    "object_identity_preservation_status",
+    "generation_provenance"
+  ],
+  "properties": {
+    "schema_version": {
+      "const": "1.1"
+    },
+    "mask_test_id": {
+      "type": "string",
+      "minLength": 1
+    },
+    "candidate_id": {
+      "type": "string",
+      "pattern": "^maincand_[0-9]{4}$"
+    },
+    "source_image_id": {
+      "type": "string",
+      "minLength": 1
+    },
+    "selection_rank": {
+      "type": "integer",
+      "minimum": 1,
+      "maximum": 40
+    },
+    "pilot_subset": {
+      "enum": [
+        "smoke",
+        "mini",
+        "completion"
+      ]
+    },
+    "object_a": {
+      "$ref": "#/$defs/object"
+    },
+    "object_b": {
+      "$ref": "#/$defs/object"
+    },
+    "source_image": {
+      "$ref": "#/$defs/sourceImage"
+    },
+    "assets": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "mask_a",
+        "mask_b",
+        "cutout_a",
+        "cutout_b",
+        "overlay"
+      ],
+      "properties": {
+        "mask_a": {
+          "$ref": "#/$defs/asset"
+        },
+        "mask_b": {
+          "$ref": "#/$defs/asset"
+        },
+        "cutout_a": {
+          "$ref": "#/$defs/asset"
+        },
+        "cutout_b": {
+          "$ref": "#/$defs/asset"
+        },
+        "overlay": {
+          "$ref": "#/$defs/asset"
+        }
+      }
+    },
+    "automatic_metrics": {
+      "type": "object",
+      "required": [
+        "object_a",
+        "object_b",
+        "pair"
+      ]
+    },
+    "automatic_diagnostic_flags": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "uniqueItems": true
+    },
+    "mask_generation_status": {
+      "const": "generated"
+    },
+    "mask_qc_status": {
+      "enum": [
+        "pass",
+        "fail",
+        "human_review",
+        "not_tested"
+      ]
+    },
+    "technical_status_before": {
+      "enum": [
+        "directly_editable",
+        "segmentation_test_required"
+      ]
+    },
+    "technical_status_after_mask_qc": {
+      "type": [
+        "string",
+        "null"
+      ],
+      "enum": [
+        "directly_editable",
+        "segmentation_test_required",
+        "failed_after_test",
+        null
+      ]
+    },
+    "technical_status_update_approved": {
+      "type": "boolean"
+    },
+    "edit_qc_status": {
+      "const": "not_tested"
+    },
+    "object_identity_preservation_status": {
+      "const": "not_tested"
+    },
+    "generation_provenance": {
+      "type": "object",
+      "additionalProperties": true,
+      "required": [
+        "seed",
+        "model_id",
+        "model_revision",
+        "prompt_type",
+        "multimask_output",
+        "mask_selection",
+        "device",
+        "dtype",
+        "config_sha256",
+        "input_manifest_sha256",
+        "candidate_pool_sha256"
+      ]
+    },
+    "selection_seed": {
+      "type": "integer"
+    },
+    "semantic_status": {
+      "const": "valid"
+    },
+    "technical_status": {
+      "enum": [
+        "directly_editable",
+        "segmentation_test_required"
+      ]
+    },
+    "development_exposure": {
+      "const": true
+    }
+  },
+  "$defs": {
+    "object": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "detection_index",
+        "label",
+        "original_color",
+        "bbox_xywh_norm",
+        "bbox_xyxy_pixels"
+      ],
+      "properties": {
+        "detection_index": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "label": {
+          "type": "string",
+          "minLength": 1
+        },
+        "original_color": {
+          "enum": [
+            "red",
+            "blue",
+            "green",
+            "yellow"
+          ]
+        },
+        "bbox_xywh_norm": {
+          "$ref": "#/$defs/bbox"
+        },
+        "bbox_xyxy_pixels": {
+          "$ref": "#/$defs/bbox"
+        }
+      }
+    },
+    "bbox": {
+      "type": "array",
+      "prefixItems": [
+        {
+          "type": "number"
+        },
+        {
+          "type": "number"
+        },
+        {
+          "type": "number"
+        },
+        {
+          "type": "number"
+        }
+      ],
+      "minItems": 4,
+      "maxItems": 4
+    },
+    "sourceImage": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "path",
+        "sha256",
+        "width",
+        "height"
+      ],
+      "properties": {
+        "path": {
+          "type": "string",
+          "minLength": 1
+        },
+        "sha256": {
+          "$ref": "#/$defs/sha256"
+        },
+        "width": {
+          "type": "integer",
+          "minimum": 1
+        },
+        "height": {
+          "type": "integer",
+          "minimum": 1
+        }
+      }
+    },
+    "asset": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "path",
+        "sha256"
+      ],
+      "properties": {
+        "path": {
+          "type": "string",
+          "minLength": 1
+        },
+        "sha256": {
+          "$ref": "#/$defs/sha256"
+        }
+      }
+    },
+    "sha256": {
+      "type": "string",
+      "pattern": "^[a-f0-9]{64}$"
+    }
+  }
+}

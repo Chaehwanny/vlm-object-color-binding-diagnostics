@@ -1,0 +1,264 @@
+{
+  "schema_version": "primary_inference_stack_freeze_v1.2",
+  "freeze_id": "attribute_binding_primary_inference_v1.2",
+  "governing_protocol": "v1.2",
+  "freeze_timestamp": "2026-08-05T17:58:20.519462+09:00",
+  "artifact_count": 16,
+  "artifacts": [
+    {
+      "role": "inference_freezer",
+      "path": "scripts/data/freeze_primary_inference_stack_v1_2.py",
+      "sha256": "4171ae319e89488d835d54c101c1f01b460ff56ad3967d1bf3349fb7574e8c78",
+      "byte_size": 28814
+    },
+    {
+      "role": "inference_config",
+      "path": "configs/attribute_binding/primary_inference_v1.2.json",
+      "sha256": "92ed7ed699f744976dff572fb108da0129894d10c2a00ec390c6862b45e08233",
+      "byte_size": 3487
+    },
+    {
+      "role": "inference_contract",
+      "path": "scripts/inference/primary_contract_v1_2.py",
+      "sha256": "39023ce2a2442f6f4f41622a6b58b53f4d0f8d71b12e32e439421a3111f76303",
+      "byte_size": 8597
+    },
+    {
+      "role": "inference_runner",
+      "path": "scripts/inference/run_primary_vlm_v1_2.py",
+      "sha256": "43e905eeb41ec67900ad06097dfba3b830986f4148985d48f3f05d2e76c15a91",
+      "byte_size": 16470
+    },
+    {
+      "role": "inference_validator",
+      "path": "scripts/data/validate_primary_inference_results_v1_2.py",
+      "sha256": "9b87d9c53125a9ceff4a8ca4974c1ba2bce4198646b228124696686b3ef71597",
+      "byte_size": 8709
+    },
+    {
+      "role": "parser_tests",
+      "path": "tests/inference/test_primary_parser_v1_2.py",
+      "sha256": "bf65492e26baa9d40281980c870fedb7bd125f47a09d70d3323ccc93d95cf5ab",
+      "byte_size": 4379
+    },
+    {
+      "role": "technical_smoke_fixture",
+      "path": "tests/fixtures/primary_inference_technical_smoke_v1.2.jsonl",
+      "sha256": "32c1a2dfd22c5de75b098d2497a23444b2acef4ffe04ecf7364ccac237705b66",
+      "byte_size": 2435
+    },
+    {
+      "role": "environment_a_requirements",
+      "path": "requirements/primary-vlm-tf457.txt",
+      "sha256": "958bcd9e9d77b84582e7c13be313229dacef2a21405a4769e81199d095d34e44",
+      "byte_size": 188
+    },
+    {
+      "role": "environment_b_requirements",
+      "path": "requirements/primary-vlm-llava.txt",
+      "sha256": "a2c51537336ce766948ac6612dfd662affc68efd556bb152782eb7635a1f0e93",
+      "byte_size": 207
+    },
+    {
+      "role": "primary_data_freeze_manifest",
+      "path": "frozen/attribute_binding_primary_v1.2/primary_freeze_manifest_v1.2.json",
+      "sha256": "6c8c00aee727330cc44ddcdbf4b182e4eb70474d5780da2416169d6b8d4926c3",
+      "byte_size": 4644
+    },
+    {
+      "role": "primary_data_freeze_checksums",
+      "path": "frozen/attribute_binding_primary_v1.2/SHA256SUMS",
+      "sha256": "adfc4818463cd4f2f36d03ac2cf9e8023d30150a8a870ad5a3e20a7622b845e0",
+      "byte_size": 1786
+    },
+    {
+      "role": "primary_queries",
+      "path": "data/manifests/attribute_binding/primary_queries_v1.2.jsonl",
+      "sha256": "1b79c0b0009899c38c11fe1fe6f2454bd1f4e9f5fe5612a11db1750a0ffdf64f",
+      "byte_size": 741724
+    },
+    {
+      "role": "qwen_technical_smoke",
+      "path": "processed/attribute_binding/inference_smoke/v1.2/qwen3_vl_8b_instruct.jsonl",
+      "sha256": "9c8332f72c1dcc3f1b59221fb6f65d8edf28b44bff3ea454a03bafa527a2534f",
+      "byte_size": 2876
+    },
+    {
+      "role": "internvl_technical_smoke",
+      "path": "processed/attribute_binding/inference_smoke/v1.2/internvl3_5_8b_instruct.jsonl",
+      "sha256": "1b360bcf858e481c8f36b488eee95e208346ee193a76c390337770a7aacfb004",
+      "byte_size": 2892
+    },
+    {
+      "role": "gemma_technical_smoke",
+      "path": "processed/attribute_binding/inference_smoke/v1.2/gemma3_12b_it.jsonl",
+      "sha256": "991e23abe2f6d64925f521cb78c9f4fde72d656bb94ba2fd9076dc40a85770f2",
+      "byte_size": 2868
+    },
+    {
+      "role": "llava_technical_smoke",
+      "path": "processed/attribute_binding/inference_smoke/v1.2/llava_onevision2_8b_instruct.jsonl",
+      "sha256": "9a0e9c40bac0609d45415fa1dd38615951f20c98b685963e9747195a10b67961",
+      "byte_size": 2928
+    }
+  ],
+  "contract": {
+    "governing_protocol": "v1.2",
+    "primary_provenance": {
+      "candidate_count": 91,
+      "query_count": 546,
+      "candidate_fingerprint": "1ef62448c53322c9519f7e4a9f67cc8af6ec7d15ee28ce06e2705b4e90d21d2b",
+      "query_fingerprint": "5cf40c94a73c22db4ed11a4b5881f586ccc852894d53f232962233b8fa1fb605",
+      "primary_freeze_manifest_sha256": "6c8c00aee727330cc44ddcdbf4b182e4eb70474d5780da2416169d6b8d4926c3",
+      "primary_query_manifest_sha256": "1b79c0b0009899c38c11fe1fe6f2454bd1f4e9f5fe5612a11db1750a0ffdf64f"
+    },
+    "model_provenance": {
+      "qwen3_vl_8b_instruct": {
+        "model_id": "Qwen/Qwen3-VL-8B-Instruct",
+        "model_revision": "0c351dd01ed87e9c1b53cbc748cba10e6187ff3b",
+        "processor_revision": "0c351dd01ed87e9c1b53cbc748cba10e6187ff3b",
+        "software_environment_id": "primary_vlm_tf457_v1",
+        "adapter": "qwen3_vl",
+        "trust_remote_code": false,
+        "preprocessing_policy": "pinned_official_auto_processor",
+        "dtype": "bfloat16",
+        "loader_class": "Qwen3VLForConditionalGeneration"
+      },
+      "internvl3_5_8b_instruct": {
+        "model_id": "OpenGVLab/InternVL3_5-8B-Instruct",
+        "model_revision": "27506812aa9914804018996329e895977ee2d0c8",
+        "processor_revision": "27506812aa9914804018996329e895977ee2d0c8",
+        "software_environment_id": "primary_vlm_tf457_v1",
+        "adapter": "internvl3_5",
+        "trust_remote_code": true,
+        "preprocessing_policy": "official_dynamic_448_bicubic_imagenet_max_tiles_12",
+        "dtype": "bfloat16",
+        "loader_class": "AutoModel+AutoTokenizer"
+      },
+      "gemma3_12b_it": {
+        "model_id": "google/gemma-3-12b-it",
+        "model_revision": "96b6f1eccf38110c56df3a15bffe176da04bfd80",
+        "processor_revision": "96b6f1eccf38110c56df3a15bffe176da04bfd80",
+        "software_environment_id": "primary_vlm_tf457_v1",
+        "adapter": "gemma3",
+        "trust_remote_code": false,
+        "preprocessing_policy": "pinned_official_auto_processor_896px",
+        "dtype": "bfloat16",
+        "loader_class": "Gemma3ForConditionalGeneration"
+      },
+      "llava_onevision2_8b_instruct": {
+        "model_id": "lmms-lab-encoder/LLaVA-OneVision-2-8B-Instruct",
+        "model_revision": "802f16c8346a062fef7ddf92b2bd64a770a50a1a",
+        "processor_revision": "802f16c8346a062fef7ddf92b2bd64a770a50a1a",
+        "software_environment_id": "primary_vlm_llava_tf57_v1",
+        "adapter": "llava_onevision2",
+        "trust_remote_code": true,
+        "preprocessing_policy": "pinned_official_custom_auto_processor",
+        "dtype": "bfloat16",
+        "loader_class": "AutoModelForImageTextToText+AutoProcessor"
+      }
+    },
+    "decoding_contract": {
+      "stateless": true,
+      "batch_size": 1,
+      "dtype": "bfloat16",
+      "do_sample": false,
+      "num_beams": 1,
+      "max_new_tokens": 16,
+      "temperature": null,
+      "top_p": null,
+      "top_k": null,
+      "sampling_parameters_passed_to_generate": false,
+      "preprocessing": "official pinned model-specific preprocessing"
+    },
+    "parser_contract": {
+      "contract_version": "primary_inference_v1.2",
+      "parser_version": "strict_option_letter_v1.2",
+      "invalid_policy": "incorrect_and_report_separately",
+      "inference_error_policy": "separate_from_invalid_response",
+      "raw_output_preserved": true
+    },
+    "dependency_provenance": {
+      "environment_a_requirements_sha256": "958bcd9e9d77b84582e7c13be313229dacef2a21405a4769e81199d095d34e44",
+      "environment_b_requirements_sha256": "a2c51537336ce766948ac6612dfd662affc68efd556bb152782eb7635a1f0e93",
+      "environments": {
+        "primary_vlm_tf457_v1": {
+          "python": "3.12.3",
+          "torch": "2.9.0+cu128",
+          "torchvision": "0.24.0+cu128",
+          "transformers": "4.57.6",
+          "cuda_available": true,
+          "cuda_runtime": "12.8",
+          "gpu": "NVIDIA RTX A6000",
+          "bf16_supported": true,
+          "required_imports": {
+            "einops": "0.8.2",
+            "timm": "1.0.28"
+          },
+          "python_path": ".venv-primary-vlm-tf457/bin/python",
+          "pip_check_returncode": 0,
+          "pip_check_output": "No broken requirements found.",
+          "pip_check_policy": "must_pass"
+        },
+        "primary_vlm_llava_tf57_v1": {
+          "python": "3.12.3",
+          "torch": "2.9.0+cu128",
+          "torchvision": "0.24.0+cu128",
+          "transformers": "5.7.0",
+          "cuda_available": true,
+          "cuda_runtime": "12.8",
+          "gpu": "NVIDIA RTX A6000",
+          "bf16_supported": true,
+          "required_imports": {
+            "cv2": "4.12.0",
+            "decord": "0.6.0"
+          },
+          "python_path": ".venv-primary-vlm-llava/bin/python",
+          "pip_check_returncode": 1,
+          "pip_check_output": "decord 0.6.0 is not supported on this platform",
+          "pip_check_policy": "allow_decord_platform_metadata_warning_only",
+          "decord_note": "pip metadata warns that decord 0.6.0 is unsupported on this platform; direct import succeeded and the frozen single-image runner does not reference or invoke decord."
+        }
+      }
+    },
+    "technical_smoke_evidence": {
+      "qwen3_vl_8b_instruct": {
+        "analysis_role": "development_only_technical_smoke",
+        "confirmatory_research_result": false,
+        "item_count": 2,
+        "generation_success_count": 2,
+        "parser_valid_count": 2,
+        "inference_error_count": 0,
+        "artifact_role": "qwen_technical_smoke"
+      },
+      "internvl3_5_8b_instruct": {
+        "analysis_role": "development_only_technical_smoke",
+        "confirmatory_research_result": false,
+        "item_count": 2,
+        "generation_success_count": 2,
+        "parser_valid_count": 2,
+        "inference_error_count": 0,
+        "artifact_role": "internvl_technical_smoke"
+      },
+      "gemma3_12b_it": {
+        "analysis_role": "development_only_technical_smoke",
+        "confirmatory_research_result": false,
+        "item_count": 2,
+        "generation_success_count": 2,
+        "parser_valid_count": 2,
+        "inference_error_count": 0,
+        "artifact_role": "gemma_technical_smoke"
+      },
+      "llava_onevision2_8b_instruct": {
+        "analysis_role": "development_only_technical_smoke",
+        "confirmatory_research_result": false,
+        "item_count": 2,
+        "generation_success_count": 2,
+        "parser_valid_count": 2,
+        "inference_error_count": 0,
+        "artifact_role": "llava_technical_smoke"
+      }
+    }
+  },
+  "immutability_policy": "The inference implementation, dependency contracts, pinned model revisions, decoding contract, parser contract, Primary references, and development-only technical-smoke evidence are frozen before Primary inference. Existing freeze records must never be silently overwritten."
+}

@@ -1,0 +1,26 @@
+{
+  "schema_version": "1.2",
+  "contract_version": "primary_qa_v1.2",
+  "prompt_version": "primary_natural_forced_choice_v1.2",
+  "canonical_colors": ["red", "blue", "green", "yellow"],
+  "binding_semantics": ["Original Binding", "Swapped Binding"],
+  "response_alphabet": ["A", "B", "C", "D"],
+  "option_ordering": {
+    "algorithm": "frozen_order_sorted_primary_domain_balanced_cyclic_v1",
+    "seed": null,
+    "color_position_offsets": {
+      "object_a_original": 0,
+      "object_a_edited": 1,
+      "object_b_original": 2,
+      "object_b_edited": 3
+    },
+    "binding_order_rule": "odd_primary_domain_order_original_first_even_primary_domain_order_swapped_first",
+    "balance_domain": "all_natural_edit_qc_valid_candidates",
+    "maximum_position_count_difference": 1
+  },
+  "reference_derivation": {
+    "bare_noun_when_unique": true,
+    "metadata_unique_non_color_label_required": true
+  },
+  "gold_source": "frozen_source_and_intervention_metadata_v1.2"
+}

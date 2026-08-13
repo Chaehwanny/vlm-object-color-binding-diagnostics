@@ -1,0 +1,142 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "color_edit_result_manifest_v1.1.schema.json",
+  "title": "Attribute Binding Color Edit Result v1.1",
+  "type": "object",
+  "additionalProperties": true,
+  "required": [
+    "schema_version",
+    "run_id",
+    "candidate_id",
+    "source_image_id",
+    "object_a_label",
+    "object_b_label",
+    "original_color_a",
+    "original_color_b",
+    "target_color_a",
+    "target_color_b",
+    "original_image_path",
+    "object_a_mask_path",
+    "object_b_mask_path",
+    "object_a_original_cutout_path",
+    "object_b_original_cutout_path",
+    "generation_status",
+    "mask_qc_status",
+    "edit_qc_status",
+    "object_identity_preservation_status",
+    "failure_reasons",
+    "development_exposure",
+    "color_swap_method",
+    "color_swap_config_sha256",
+    "source_image_sha256",
+    "mask_a_sha256",
+    "mask_b_sha256",
+    "automatic_qc_metrics",
+    "diagnostic_flags",
+    "generation_provenance"
+  ],
+  "properties": {
+    "schema_version": {
+      "const": "1.1"
+    },
+    "run_id": {
+      "type": "string",
+      "pattern": "^attribute_binding_color_swap_(smoke|mini|completion)_v1\\.1$"
+    },
+    "candidate_id": {
+      "type": "string",
+      "pattern": "^maincand_[0-9]{4}$"
+    },
+    "source_image_id": {
+      "type": "string",
+      "minLength": 1
+    },
+    "original_color_a": {
+      "$ref": "#/$defs/color"
+    },
+    "original_color_b": {
+      "$ref": "#/$defs/color"
+    },
+    "target_color_a": {
+      "$ref": "#/$defs/color"
+    },
+    "target_color_b": {
+      "$ref": "#/$defs/color"
+    },
+    "generation_status": {
+      "enum": [
+        "generated",
+        "failed"
+      ]
+    },
+    "mask_qc_status": {
+      "const": "pass"
+    },
+    "edit_qc_status": {
+      "const": "not_tested"
+    },
+    "object_identity_preservation_status": {
+      "const": "not_tested"
+    },
+    "failure_reasons": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "uniqueItems": true
+    },
+    "development_exposure": {
+      "const": true
+    },
+    "automatic_qc_metrics": {
+      "type": "object"
+    },
+    "diagnostic_flags": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "uniqueItems": true
+    },
+    "edited_cutout_a_sha256": {
+      "$ref": "#/$defs/nullableSha"
+    },
+    "edited_cutout_b_sha256": {
+      "$ref": "#/$defs/nullableSha"
+    },
+    "natural_edited_sha256": {
+      "$ref": "#/$defs/nullableSha"
+    },
+    "subset_name": {
+      "enum": [
+        "smoke",
+        "mini",
+        "completion"
+      ]
+    },
+    "pilot_subset": {
+      "enum": [
+        "smoke",
+        "mini",
+        "completion"
+      ]
+    }
+  },
+  "$defs": {
+    "color": {
+      "enum": [
+        "red",
+        "blue",
+        "green",
+        "yellow"
+      ]
+    },
+    "nullableSha": {
+      "type": [
+        "string",
+        "null"
+      ],
+      "pattern": "^[a-f0-9]{64}$"
+    }
+  }
+}

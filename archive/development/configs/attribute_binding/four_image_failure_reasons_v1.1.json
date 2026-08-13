@@ -1,0 +1,25 @@
+{
+  "schema_version": "1.1",
+  "enum_id": "attribute_binding_four_image_failure_reasons_v1.1",
+  "failure_reasons": {
+    "object_identity_not_preserved": "One or both Controlled objects are not recognizable as the source objects.",
+    "original_color_binding_mismatch": "Controlled Original does not preserve the Natural Original color binding.",
+    "edited_color_binding_mismatch": "Controlled Edited does not preserve the Natural Edited color binding.",
+    "edited_cutout_reuse_violation": "Controlled Edited did not use the authoritative edited cutout asset.",
+    "placement_mismatch_between_conditions": "Controlled Original and Edited use different positions, sizes, or canvas geometry.",
+    "relative_scale_not_preserved": "A/B relative object scale was not preserved under one shared scale factor.",
+    "object_overlap": "The two Controlled objects overlap.",
+    "canvas_clipping": "An object is clipped by the Controlled canvas.",
+    "alpha_boundary_artifact": "A material alpha edge, halo, or boundary artifact is visible.",
+    "invalid_background": "The background is inconsistent, non-neutral, or differs between conditions.",
+    "prompt_or_answer_invalid": "One or more of the four images no longer supports an unambiguous question and answer.",
+    "missing_or_corrupted_asset": "A required input or output asset is absent, unreadable, or checksum-invalid.",
+    "other": "A failure not covered above; a review note is mandatory."
+  },
+  "rules": {
+    "automatic_flags_are_not_final_failures": true,
+    "pass_forbids_failure_reasons": true,
+    "fail_requires_failure_reason": true,
+    "other_requires_note": true
+  }
+}

@@ -1,0 +1,107 @@
+{
+  "schema_version": "primary_pre_inference_freeze_v1.2",
+  "freeze_id": "attribute_binding_primary_v1.2",
+  "governing_protocol": "v1.2",
+  "freeze_timestamp": "2026-08-04T14:46:07.054470+00:00",
+  "primary_candidate_count": 91,
+  "primary_query_count": 546,
+  "validation_status": "pass",
+  "validation_error_count": 0,
+  "reference_policy": "deterministic_metadata_unique_non_color_label",
+  "ordered_candidate_membership_fingerprint": {
+    "method": "sha256(json.dumps(candidate_id_sequence,ensure_ascii=False,separators=(comma,colon)))",
+    "sha256": "1ef62448c53322c9519f7e4a9f67cc8af6ec7d15ee28ce06e2705b4e90d21d2b",
+    "sequence_length": 91
+  },
+  "ordered_query_inventory_fingerprint": {
+    "method": "sha256(json.dumps(query_id_sequence,ensure_ascii=False,separators=(comma,colon)))",
+    "sha256": "5cf40c94a73c22db4ed11a4b5881f586ccc852894d53f232962233b8fa1fb605",
+    "sequence_length": 546
+  },
+  "frozen_main_source_sha256": "48e6158a20b22e3014096a31abd9e8654758e909ef7542fedef87cb92b10be98",
+  "primary_config_sha256": "7c6743fc6dfd30bbfe0276ea3747ef6d160df7ca7557e870f678e591606a7096",
+  "generator_sha256": "31b2678429d46b109ed6cf0ed9f8b9f1a2c8b17f78b8d54ad052917e4564005e",
+  "validator_sha256": "11a1eb919526a52e685921e74ecef6b4257fa06b4662df21c0ecbad1b3c2bf3b",
+  "artifact_count": 13,
+  "artifacts": [
+    {
+      "role": "primary_queries",
+      "path": "data/manifests/attribute_binding/primary_queries_v1.2.jsonl",
+      "sha256": "1b79c0b0009899c38c11fe1fe6f2454bd1f4e9f5fe5612a11db1750a0ffdf64f",
+      "byte_size": 741724
+    },
+    {
+      "role": "primary_candidate_status",
+      "path": "data/manifests/attribute_binding/primary_candidate_status_v1.2.jsonl",
+      "sha256": "45e5ee2f394355e9cc6e596bf60499b8341a337cdf98ca7f1c7f9080e9229f8f",
+      "byte_size": 32764
+    },
+    {
+      "role": "primary_generation_summary",
+      "path": "data/manifests/attribute_binding/primary_generation_summary_v1.2.json",
+      "sha256": "2e850d82905e8ef858866fcfece21dd6fa4ba0bf7dee443219a8234e395e321c",
+      "byte_size": 564
+    },
+    {
+      "role": "primary_validation_summary",
+      "path": "data/manifests/attribute_binding/primary_validation_summary_v1.2.json",
+      "sha256": "936fa998c4e3411db022bbf9cf73907378bab26a0564057374eab8b29048c2f2",
+      "byte_size": 1397
+    },
+    {
+      "role": "primary_config",
+      "path": "configs/attribute_binding/primary_qa_v1.2.json",
+      "sha256": "7c6743fc6dfd30bbfe0276ea3747ef6d160df7ca7557e870f678e591606a7096",
+      "byte_size": 970
+    },
+    {
+      "role": "reviewed_natural_edit_lineage",
+      "path": "processed/attribute_binding/main_experiment/v1.1/color_editing/main_v1.1/color_edit_results_main_v1.1_reviewed.jsonl",
+      "sha256": "c19ce73ba55443d1f2a5ce6caef394465bc5d21581f474eb54b360f1ae5b7e6b",
+      "byte_size": 524603
+    },
+    {
+      "role": "frozen_main_source",
+      "path": "processed/attribute_binding/main_experiment/v1.1/preparation/main_input_manifest_v1.1.jsonl",
+      "sha256": "48e6158a20b22e3014096a31abd9e8654758e909ef7542fedef87cb92b10be98",
+      "byte_size": 461569
+    },
+    {
+      "role": "primary_generator",
+      "path": "scripts/data/build_primary_qa_v1_2.py",
+      "sha256": "31b2678429d46b109ed6cf0ed9f8b9f1a2c8b17f78b8d54ad052917e4564005e",
+      "byte_size": 18307
+    },
+    {
+      "role": "primary_validator",
+      "path": "scripts/data/validate_primary_qa_v1_2.py",
+      "sha256": "11a1eb919526a52e685921e74ecef6b4257fa06b4662df21c0ecbad1b3c2bf3b",
+      "byte_size": 15478
+    },
+    {
+      "role": "governing_protocol",
+      "path": "docs/protocols/protocol_v1.2_PRE_INFERENCE_AMENDMENT.md",
+      "sha256": "ab2a02a078b2e11707d1e350a77253d0a4eccb5a543ae44aaf9837a964f6eb0e",
+      "byte_size": 6647
+    },
+    {
+      "role": "task_specification",
+      "path": "docs/protocols/task_specification_v1.1.md",
+      "sha256": "676a18ebc9c0b577235cc8f1b77e8d9a07d117e67844ee1b9744e44fbbc67483",
+      "byte_size": 2039
+    },
+    {
+      "role": "manifest_schema",
+      "path": "docs/protocols/manifest_schema_v1.1.md",
+      "sha256": "b7b71363142ba1115ff1cd961e746456435f4aa274ee770ca6fe2abac58049a6",
+      "byte_size": 11228
+    },
+    {
+      "role": "statistical_analysis_plan",
+      "path": "docs/protocols/statistical_analysis_plan_v1.1.md",
+      "sha256": "5a80e5652744809ab92593c1e4fe9ba532b7238dc6e8f9de410707a6753b9f29",
+      "byte_size": 3256
+    }
+  ],
+  "immutability_policy": "Primary artifacts are frozen before model inference. Any later modification requires an explicit amendment and a new provenance record; existing freeze records must not be silently overwritten."
+}

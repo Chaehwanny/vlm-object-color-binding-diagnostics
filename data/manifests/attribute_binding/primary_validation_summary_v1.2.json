@@ -1,0 +1,76 @@
+{
+  "schema_version": "1.2",
+  "status": "pass",
+  "expected_candidate_domain": 91,
+  "metadata_unique_reference_count": 91,
+  "primary_candidate_count": 91,
+  "query_count": 546,
+  "expected_query_count": 546,
+  "frozen_schedule_position_counts": {
+    "object_a_original": {
+      "0": 23,
+      "1": 23,
+      "2": 23,
+      "3": 22
+    },
+    "object_a_edited": {
+      "1": 23,
+      "2": 23,
+      "3": 23,
+      "0": 22
+    },
+    "object_b_original": {
+      "2": 23,
+      "3": 23,
+      "0": 23,
+      "1": 22
+    },
+    "object_b_edited": {
+      "3": 23,
+      "0": 23,
+      "1": 23,
+      "2": 22
+    },
+    "binding_semantic_order": {
+      "0": 46,
+      "1": 45
+    }
+  },
+  "included_item_correct_position_counts": {
+    "original:object_a_color": {
+      "0": 23,
+      "1": 23,
+      "2": 23,
+      "3": 22
+    },
+    "original:binding_choice": {
+      "0": 46,
+      "1": 45
+    },
+    "original:object_b_color": {
+      "2": 23,
+      "3": 23,
+      "0": 23,
+      "1": 22
+    },
+    "edited:object_a_color": {
+      "1": 23,
+      "2": 23,
+      "3": 23,
+      "0": 22
+    },
+    "edited:binding_choice": {
+      "1": 46,
+      "0": 45
+    },
+    "edited:object_b_color": {
+      "3": 23,
+      "0": 23,
+      "1": 23,
+      "2": 22
+    }
+  },
+  "reference_policy": "deterministic_metadata_unique_non_color_label",
+  "validation_error_count": 0,
+  "validation_errors": []
+}

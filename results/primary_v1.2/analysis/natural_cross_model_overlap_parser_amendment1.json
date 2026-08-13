@@ -1,0 +1,1614 @@
+{
+  "original_color_pair_failure": {
+    "model_count_distribution": {
+      "0": {
+        "n": 55,
+        "denominator": 91,
+        "percent": 60.43956043956044
+      },
+      "1": {
+        "n": 18,
+        "denominator": 91,
+        "percent": 19.78021978021978
+      },
+      "2": {
+        "n": 7,
+        "denominator": 91,
+        "percent": 7.6923076923076925
+      },
+      "3": {
+        "n": 4,
+        "denominator": 91,
+        "percent": 4.395604395604396
+      },
+      "4": {
+        "n": 7,
+        "denominator": 91,
+        "percent": 7.6923076923076925
+      }
+    },
+    "shared_by_two_or_more_candidate_ids": [
+      "maincand_0015",
+      "maincand_0046",
+      "maincand_0051",
+      "maincand_0059",
+      "maincand_0068",
+      "maincand_0098",
+      "maincand_0120",
+      "maincand_0126",
+      "maincand_0172",
+      "maincand_0206",
+      "maincand_0212",
+      "maincand_0242",
+      "maincand_0254",
+      "maincand_0257",
+      "maincand_0271",
+      "maincand_0276",
+      "maincand_0279",
+      "maincand_0283"
+    ],
+    "shared_by_all_four_candidate_ids": [
+      "maincand_0015",
+      "maincand_0046",
+      "maincand_0068",
+      "maincand_0126",
+      "maincand_0206",
+      "maincand_0242",
+      "maincand_0279"
+    ],
+    "candidate_to_models": {
+      "maincand_0008": [
+        "gemma3_12b_it"
+      ],
+      "maincand_0015": [
+        "qwen3_vl_8b_instruct",
+        "internvl3_5_8b_instruct",
+        "gemma3_12b_it",
+        "llava_onevision2_8b_instruct"
+      ],
+      "maincand_0034": [
+        "internvl3_5_8b_instruct"
+      ],
+      "maincand_0046": [
+        "qwen3_vl_8b_instruct",
+        "internvl3_5_8b_instruct",
+        "gemma3_12b_it",
+        "llava_onevision2_8b_instruct"
+      ],
+      "maincand_0051": [
+        "qwen3_vl_8b_instruct",
+        "gemma3_12b_it"
+      ],
+      "maincand_0058": [
+        "gemma3_12b_it"
+      ],
+      "maincand_0059": [
+        "internvl3_5_8b_instruct",
+        "llava_onevision2_8b_instruct"
+      ],
+      "maincand_0068": [
+        "qwen3_vl_8b_instruct",
+        "internvl3_5_8b_instruct",
+        "gemma3_12b_it",
+        "llava_onevision2_8b_instruct"
+      ],
+      "maincand_0069": [
+        "qwen3_vl_8b_instruct"
+      ],
+      "maincand_0070": [
+        "gemma3_12b_it"
+      ],
+      "maincand_0089": [
+        "gemma3_12b_it"
+      ],
+      "maincand_0098": [
+        "qwen3_vl_8b_instruct",
+        "internvl3_5_8b_instruct",
+        "llava_onevision2_8b_instruct"
+      ],
+      "maincand_0120": [
+        "gemma3_12b_it",
+        "llava_onevision2_8b_instruct"
+      ],
+      "maincand_0126": [
+        "qwen3_vl_8b_instruct",
+        "internvl3_5_8b_instruct",
+        "gemma3_12b_it",
+        "llava_onevision2_8b_instruct"
+      ],
+      "maincand_0136": [
+        "gemma3_12b_it"
+      ],
+      "maincand_0148": [
+        "gemma3_12b_it"
+      ],
+      "maincand_0172": [
+        "internvl3_5_8b_instruct",
+        "gemma3_12b_it"
+      ],
+      "maincand_0197": [
+        "gemma3_12b_it"
+      ],
+      "maincand_0206": [
+        "qwen3_vl_8b_instruct",
+        "internvl3_5_8b_instruct",
+        "gemma3_12b_it",
+        "llava_onevision2_8b_instruct"
+      ],
+      "maincand_0210": [
+        "gemma3_12b_it"
+      ],
+      "maincand_0212": [
+        "qwen3_vl_8b_instruct",
+        "internvl3_5_8b_instruct",
+        "gemma3_12b_it"
+      ],
+      "maincand_0227": [
+        "gemma3_12b_it"
+      ],
+      "maincand_0228": [
+        "gemma3_12b_it"
+      ],
+      "maincand_0235": [
+        "gemma3_12b_it"
+      ],
+      "maincand_0242": [
+        "qwen3_vl_8b_instruct",
+        "internvl3_5_8b_instruct",
+        "gemma3_12b_it",
+        "llava_onevision2_8b_instruct"
+      ],
+      "maincand_0254": [
+        "gemma3_12b_it",
+        "llava_onevision2_8b_instruct"
+      ],
+      "maincand_0257": [
+        "qwen3_vl_8b_instruct",
+        "internvl3_5_8b_instruct",
+        "gemma3_12b_it"
+      ],
+      "maincand_0267": [
+        "gemma3_12b_it"
+      ],
+      "maincand_0271": [
+        "gemma3_12b_it",
+        "llava_onevision2_8b_instruct"
+      ],
+      "maincand_0273": [
+        "llava_onevision2_8b_instruct"
+      ],
+      "maincand_0276": [
+        "qwen3_vl_8b_instruct",
+        "internvl3_5_8b_instruct",
+        "gemma3_12b_it"
+      ],
+      "maincand_0279": [
+        "qwen3_vl_8b_instruct",
+        "internvl3_5_8b_instruct",
+        "gemma3_12b_it",
+        "llava_onevision2_8b_instruct"
+      ],
+      "maincand_0282": [
+        "gemma3_12b_it"
+      ],
+      "maincand_0283": [
+        "internvl3_5_8b_instruct",
+        "llava_onevision2_8b_instruct"
+      ],
+      "maincand_0284": [
+        "llava_onevision2_8b_instruct"
+      ],
+      "maincand_0288": [
+        "gemma3_12b_it"
+      ]
+    }
+  },
+  "edited_color_pair_failure": {
+    "model_count_distribution": {
+      "0": {
+        "n": 28,
+        "denominator": 91,
+        "percent": 30.76923076923077
+      },
+      "1": {
+        "n": 21,
+        "denominator": 91,
+        "percent": 23.076923076923077
+      },
+      "2": {
+        "n": 6,
+        "denominator": 91,
+        "percent": 6.593406593406594
+      },
+      "3": {
+        "n": 8,
+        "denominator": 91,
+        "percent": 8.791208791208792
+      },
+      "4": {
+        "n": 28,
+        "denominator": 91,
+        "percent": 30.76923076923077
+      }
+    },
+    "shared_by_two_or_more_candidate_ids": [
+      "maincand_0015",
+      "maincand_0022",
+      "maincand_0034",
+      "maincand_0041",
+      "maincand_0051",
+      "maincand_0057",
+      "maincand_0058",
+      "maincand_0059",
+      "maincand_0068",
+      "maincand_0069",
+      "maincand_0070",
+      "maincand_0076",
+      "maincand_0089",
+      "maincand_0098",
+      "maincand_0103",
+      "maincand_0104",
+      "maincand_0126",
+      "maincand_0127",
+      "maincand_0134",
+      "maincand_0135",
+      "maincand_0136",
+      "maincand_0147",
+      "maincand_0148",
+      "maincand_0172",
+      "maincand_0192",
+      "maincand_0197",
+      "maincand_0199",
+      "maincand_0208",
+      "maincand_0210",
+      "maincand_0215",
+      "maincand_0216",
+      "maincand_0223",
+      "maincand_0226",
+      "maincand_0231",
+      "maincand_0242",
+      "maincand_0257",
+      "maincand_0273",
+      "maincand_0276",
+      "maincand_0279",
+      "maincand_0281",
+      "maincand_0283",
+      "maincand_0288"
+    ],
+    "shared_by_all_four_candidate_ids": [
+      "maincand_0015",
+      "maincand_0022",
+      "maincand_0034",
+      "maincand_0041",
+      "maincand_0057",
+      "maincand_0059",
+      "maincand_0069",
+      "maincand_0076",
+      "maincand_0089",
+      "maincand_0098",
+      "maincand_0103",
+      "maincand_0126",
+      "maincand_0127",
+      "maincand_0134",
+      "maincand_0135",
+      "maincand_0136",
+      "maincand_0148",
+      "maincand_0208",
+      "maincand_0215",
+      "maincand_0216",
+      "maincand_0223",
+      "maincand_0226",
+      "maincand_0231",
+      "maincand_0242",
+      "maincand_0257",
+      "maincand_0273",
+      "maincand_0276",
+      "maincand_0288"
+    ],
+    "candidate_to_models": {
+      "maincand_0008": [
+        "gemma3_12b_it"
+      ],
+      "maincand_0015": [
+        "qwen3_vl_8b_instruct",
+        "internvl3_5_8b_instruct",
+        "gemma3_12b_it",
+        "llava_onevision2_8b_instruct"
+      ],
+      "maincand_0022": [
+        "qwen3_vl_8b_instruct",
+        "internvl3_5_8b_instruct",
+        "gemma3_12b_it",
+        "llava_onevision2_8b_instruct"
+      ],
+      "maincand_0026": [
+        "gemma3_12b_it"
+      ],
+      "maincand_0034": [
+        "qwen3_vl_8b_instruct",
+        "internvl3_5_8b_instruct",
+        "gemma3_12b_it",
+        "llava_onevision2_8b_instruct"
+      ],
+      "maincand_0041": [
+        "qwen3_vl_8b_instruct",
+        "internvl3_5_8b_instruct",
+        "gemma3_12b_it",
+        "llava_onevision2_8b_instruct"
+      ],
+      "maincand_0046": [
+        "internvl3_5_8b_instruct"
+      ],
+      "maincand_0051": [
+        "qwen3_vl_8b_instruct",
+        "gemma3_12b_it",
+        "llava_onevision2_8b_instruct"
+      ],
+      "maincand_0057": [
+        "qwen3_vl_8b_instruct",
+        "internvl3_5_8b_instruct",
+        "gemma3_12b_it",
+        "llava_onevision2_8b_instruct"
+      ],
+      "maincand_0058": [
+        "qwen3_vl_8b_instruct",
+        "gemma3_12b_it"
+      ],
+      "maincand_0059": [
+        "qwen3_vl_8b_instruct",
+        "internvl3_5_8b_instruct",
+        "gemma3_12b_it",
+        "llava_onevision2_8b_instruct"
+      ],
+      "maincand_0068": [
+        "internvl3_5_8b_instruct",
+        "llava_onevision2_8b_instruct"
+      ],
+      "maincand_0069": [
+        "qwen3_vl_8b_instruct",
+        "internvl3_5_8b_instruct",
+        "gemma3_12b_it",
+        "llava_onevision2_8b_instruct"
+      ],
+      "maincand_0070": [
+        "qwen3_vl_8b_instruct",
+        "internvl3_5_8b_instruct",
+        "gemma3_12b_it"
+      ],
+      "maincand_0076": [
+        "qwen3_vl_8b_instruct",
+        "internvl3_5_8b_instruct",
+        "gemma3_12b_it",
+        "llava_onevision2_8b_instruct"
+      ],
+      "maincand_0079": [
+        "gemma3_12b_it"
+      ],
+      "maincand_0089": [
+        "qwen3_vl_8b_instruct",
+        "internvl3_5_8b_instruct",
+        "gemma3_12b_it",
+        "llava_onevision2_8b_instruct"
+      ],
+      "maincand_0098": [
+        "qwen3_vl_8b_instruct",
+        "internvl3_5_8b_instruct",
+        "gemma3_12b_it",
+        "llava_onevision2_8b_instruct"
+      ],
+      "maincand_0103": [
+        "qwen3_vl_8b_instruct",
+        "internvl3_5_8b_instruct",
+        "gemma3_12b_it",
+        "llava_onevision2_8b_instruct"
+      ],
+      "maincand_0104": [
+        "qwen3_vl_8b_instruct",
+        "gemma3_12b_it"
+      ],
+      "maincand_0122": [
+        "gemma3_12b_it"
+      ],
+      "maincand_0126": [
+        "qwen3_vl_8b_instruct",
+        "internvl3_5_8b_instruct",
+        "gemma3_12b_it",
+        "llava_onevision2_8b_instruct"
+      ],
+      "maincand_0127": [
+        "qwen3_vl_8b_instruct",
+        "internvl3_5_8b_instruct",
+        "gemma3_12b_it",
+        "llava_onevision2_8b_instruct"
+      ],
+      "maincand_0129": [
+        "llava_onevision2_8b_instruct"
+      ],
+      "maincand_0134": [
+        "qwen3_vl_8b_instruct",
+        "internvl3_5_8b_instruct",
+        "gemma3_12b_it",
+        "llava_onevision2_8b_instruct"
+      ],
+      "maincand_0135": [
+        "qwen3_vl_8b_instruct",
+        "internvl3_5_8b_instruct",
+        "gemma3_12b_it",
+        "llava_onevision2_8b_instruct"
+      ],
+      "maincand_0136": [
+        "qwen3_vl_8b_instruct",
+        "internvl3_5_8b_instruct",
+        "gemma3_12b_it",
+        "llava_onevision2_8b_instruct"
+      ],
+      "maincand_0139": [
+        "internvl3_5_8b_instruct"
+      ],
+      "maincand_0147": [
+        "qwen3_vl_8b_instruct",
+        "internvl3_5_8b_instruct",
+        "gemma3_12b_it"
+      ],
+      "maincand_0148": [
+        "qwen3_vl_8b_instruct",
+        "internvl3_5_8b_instruct",
+        "gemma3_12b_it",
+        "llava_onevision2_8b_instruct"
+      ],
+      "maincand_0161": [
+        "gemma3_12b_it"
+      ],
+      "maincand_0164": [
+        "gemma3_12b_it"
+      ],
+      "maincand_0172": [
+        "internvl3_5_8b_instruct",
+        "gemma3_12b_it"
+      ],
+      "maincand_0175": [
+        "gemma3_12b_it"
+      ],
+      "maincand_0192": [
+        "internvl3_5_8b_instruct",
+        "gemma3_12b_it"
+      ],
+      "maincand_0197": [
+        "qwen3_vl_8b_instruct",
+        "gemma3_12b_it",
+        "llava_onevision2_8b_instruct"
+      ],
+      "maincand_0199": [
+        "qwen3_vl_8b_instruct",
+        "internvl3_5_8b_instruct"
+      ],
+      "maincand_0201": [
+        "gemma3_12b_it"
+      ],
+      "maincand_0206": [
+        "gemma3_12b_it"
+      ],
+      "maincand_0208": [
+        "qwen3_vl_8b_instruct",
+        "internvl3_5_8b_instruct",
+        "gemma3_12b_it",
+        "llava_onevision2_8b_instruct"
+      ],
+      "maincand_0210": [
+        "qwen3_vl_8b_instruct",
+        "internvl3_5_8b_instruct",
+        "gemma3_12b_it"
+      ],
+      "maincand_0212": [
+        "qwen3_vl_8b_instruct"
+      ],
+      "maincand_0215": [
+        "qwen3_vl_8b_instruct",
+        "internvl3_5_8b_instruct",
+        "gemma3_12b_it",
+        "llava_onevision2_8b_instruct"
+      ],
+      "maincand_0216": [
+        "qwen3_vl_8b_instruct",
+        "internvl3_5_8b_instruct",
+        "gemma3_12b_it",
+        "llava_onevision2_8b_instruct"
+      ],
+      "maincand_0223": [
+        "qwen3_vl_8b_instruct",
+        "internvl3_5_8b_instruct",
+        "gemma3_12b_it",
+        "llava_onevision2_8b_instruct"
+      ],
+      "maincand_0226": [
+        "qwen3_vl_8b_instruct",
+        "internvl3_5_8b_instruct",
+        "gemma3_12b_it",
+        "llava_onevision2_8b_instruct"
+      ],
+      "maincand_0227": [
+        "gemma3_12b_it"
+      ],
+      "maincand_0231": [
+        "qwen3_vl_8b_instruct",
+        "internvl3_5_8b_instruct",
+        "gemma3_12b_it",
+        "llava_onevision2_8b_instruct"
+      ],
+      "maincand_0236": [
+        "gemma3_12b_it"
+      ],
+      "maincand_0242": [
+        "qwen3_vl_8b_instruct",
+        "internvl3_5_8b_instruct",
+        "gemma3_12b_it",
+        "llava_onevision2_8b_instruct"
+      ],
+      "maincand_0246": [
+        "gemma3_12b_it"
+      ],
+      "maincand_0249": [
+        "internvl3_5_8b_instruct"
+      ],
+      "maincand_0257": [
+        "qwen3_vl_8b_instruct",
+        "internvl3_5_8b_instruct",
+        "gemma3_12b_it",
+        "llava_onevision2_8b_instruct"
+      ],
+      "maincand_0267": [
+        "gemma3_12b_it"
+      ],
+      "maincand_0271": [
+        "gemma3_12b_it"
+      ],
+      "maincand_0273": [
+        "qwen3_vl_8b_instruct",
+        "internvl3_5_8b_instruct",
+        "gemma3_12b_it",
+        "llava_onevision2_8b_instruct"
+      ],
+      "maincand_0274": [
+        "llava_onevision2_8b_instruct"
+      ],
+      "maincand_0275": [
+        "gemma3_12b_it"
+      ],
+      "maincand_0276": [
+        "qwen3_vl_8b_instruct",
+        "internvl3_5_8b_instruct",
+        "gemma3_12b_it",
+        "llava_onevision2_8b_instruct"
+      ],
+      "maincand_0279": [
+        "qwen3_vl_8b_instruct",
+        "internvl3_5_8b_instruct",
+        "gemma3_12b_it"
+      ],
+      "maincand_0281": [
+        "qwen3_vl_8b_instruct",
+        "gemma3_12b_it",
+        "llava_onevision2_8b_instruct"
+      ],
+      "maincand_0283": [
+        "qwen3_vl_8b_instruct",
+        "gemma3_12b_it",
+        "llava_onevision2_8b_instruct"
+      ],
+      "maincand_0288": [
+        "qwen3_vl_8b_instruct",
+        "internvl3_5_8b_instruct",
+        "gemma3_12b_it",
+        "llava_onevision2_8b_instruct"
+      ]
+    }
+  },
+  "stage1": {
+    "model_count_distribution": {
+      "0": {
+        "n": 55,
+        "denominator": 91,
+        "percent": 60.43956043956044
+      },
+      "1": {
+        "n": 18,
+        "denominator": 91,
+        "percent": 19.78021978021978
+      },
+      "2": {
+        "n": 7,
+        "denominator": 91,
+        "percent": 7.6923076923076925
+      },
+      "3": {
+        "n": 4,
+        "denominator": 91,
+        "percent": 4.395604395604396
+      },
+      "4": {
+        "n": 7,
+        "denominator": 91,
+        "percent": 7.6923076923076925
+      }
+    },
+    "shared_by_two_or_more_candidate_ids": [
+      "maincand_0015",
+      "maincand_0046",
+      "maincand_0051",
+      "maincand_0059",
+      "maincand_0068",
+      "maincand_0098",
+      "maincand_0120",
+      "maincand_0126",
+      "maincand_0172",
+      "maincand_0206",
+      "maincand_0212",
+      "maincand_0242",
+      "maincand_0254",
+      "maincand_0257",
+      "maincand_0271",
+      "maincand_0276",
+      "maincand_0279",
+      "maincand_0283"
+    ],
+    "shared_by_all_four_candidate_ids": [
+      "maincand_0015",
+      "maincand_0046",
+      "maincand_0068",
+      "maincand_0126",
+      "maincand_0206",
+      "maincand_0242",
+      "maincand_0279"
+    ],
+    "candidate_to_models": {
+      "maincand_0008": [
+        "gemma3_12b_it"
+      ],
+      "maincand_0015": [
+        "qwen3_vl_8b_instruct",
+        "internvl3_5_8b_instruct",
+        "gemma3_12b_it",
+        "llava_onevision2_8b_instruct"
+      ],
+      "maincand_0034": [
+        "internvl3_5_8b_instruct"
+      ],
+      "maincand_0046": [
+        "qwen3_vl_8b_instruct",
+        "internvl3_5_8b_instruct",
+        "gemma3_12b_it",
+        "llava_onevision2_8b_instruct"
+      ],
+      "maincand_0051": [
+        "qwen3_vl_8b_instruct",
+        "gemma3_12b_it"
+      ],
+      "maincand_0058": [
+        "gemma3_12b_it"
+      ],
+      "maincand_0059": [
+        "internvl3_5_8b_instruct",
+        "llava_onevision2_8b_instruct"
+      ],
+      "maincand_0068": [
+        "qwen3_vl_8b_instruct",
+        "internvl3_5_8b_instruct",
+        "gemma3_12b_it",
+        "llava_onevision2_8b_instruct"
+      ],
+      "maincand_0069": [
+        "qwen3_vl_8b_instruct"
+      ],
+      "maincand_0070": [
+        "gemma3_12b_it"
+      ],
+      "maincand_0089": [
+        "gemma3_12b_it"
+      ],
+      "maincand_0098": [
+        "qwen3_vl_8b_instruct",
+        "internvl3_5_8b_instruct",
+        "llava_onevision2_8b_instruct"
+      ],
+      "maincand_0120": [
+        "gemma3_12b_it",
+        "llava_onevision2_8b_instruct"
+      ],
+      "maincand_0126": [
+        "qwen3_vl_8b_instruct",
+        "internvl3_5_8b_instruct",
+        "gemma3_12b_it",
+        "llava_onevision2_8b_instruct"
+      ],
+      "maincand_0136": [
+        "gemma3_12b_it"
+      ],
+      "maincand_0148": [
+        "gemma3_12b_it"
+      ],
+      "maincand_0172": [
+        "internvl3_5_8b_instruct",
+        "gemma3_12b_it"
+      ],
+      "maincand_0197": [
+        "gemma3_12b_it"
+      ],
+      "maincand_0206": [
+        "qwen3_vl_8b_instruct",
+        "internvl3_5_8b_instruct",
+        "gemma3_12b_it",
+        "llava_onevision2_8b_instruct"
+      ],
+      "maincand_0210": [
+        "gemma3_12b_it"
+      ],
+      "maincand_0212": [
+        "qwen3_vl_8b_instruct",
+        "internvl3_5_8b_instruct",
+        "gemma3_12b_it"
+      ],
+      "maincand_0227": [
+        "gemma3_12b_it"
+      ],
+      "maincand_0228": [
+        "gemma3_12b_it"
+      ],
+      "maincand_0235": [
+        "gemma3_12b_it"
+      ],
+      "maincand_0242": [
+        "qwen3_vl_8b_instruct",
+        "internvl3_5_8b_instruct",
+        "gemma3_12b_it",
+        "llava_onevision2_8b_instruct"
+      ],
+      "maincand_0254": [
+        "gemma3_12b_it",
+        "llava_onevision2_8b_instruct"
+      ],
+      "maincand_0257": [
+        "qwen3_vl_8b_instruct",
+        "internvl3_5_8b_instruct",
+        "gemma3_12b_it"
+      ],
+      "maincand_0267": [
+        "gemma3_12b_it"
+      ],
+      "maincand_0271": [
+        "gemma3_12b_it",
+        "llava_onevision2_8b_instruct"
+      ],
+      "maincand_0273": [
+        "llava_onevision2_8b_instruct"
+      ],
+      "maincand_0276": [
+        "qwen3_vl_8b_instruct",
+        "internvl3_5_8b_instruct",
+        "gemma3_12b_it"
+      ],
+      "maincand_0279": [
+        "qwen3_vl_8b_instruct",
+        "internvl3_5_8b_instruct",
+        "gemma3_12b_it",
+        "llava_onevision2_8b_instruct"
+      ],
+      "maincand_0282": [
+        "gemma3_12b_it"
+      ],
+      "maincand_0283": [
+        "internvl3_5_8b_instruct",
+        "llava_onevision2_8b_instruct"
+      ],
+      "maincand_0284": [
+        "llava_onevision2_8b_instruct"
+      ],
+      "maincand_0288": [
+        "gemma3_12b_it"
+      ]
+    }
+  },
+  "stage3": {
+    "model_count_distribution": {
+      "0": {
+        "n": 42,
+        "denominator": 91,
+        "percent": 46.15384615384615
+      },
+      "1": {
+        "n": 18,
+        "denominator": 91,
+        "percent": 19.78021978021978
+      },
+      "2": {
+        "n": 8,
+        "denominator": 91,
+        "percent": 8.791208791208792
+      },
+      "3": {
+        "n": 9,
+        "denominator": 91,
+        "percent": 9.89010989010989
+      },
+      "4": {
+        "n": 14,
+        "denominator": 91,
+        "percent": 15.384615384615385
+      }
+    },
+    "shared_by_two_or_more_candidate_ids": [
+      "maincand_0022",
+      "maincand_0034",
+      "maincand_0041",
+      "maincand_0057",
+      "maincand_0059",
+      "maincand_0069",
+      "maincand_0070",
+      "maincand_0076",
+      "maincand_0089",
+      "maincand_0103",
+      "maincand_0104",
+      "maincand_0127",
+      "maincand_0134",
+      "maincand_0135",
+      "maincand_0136",
+      "maincand_0147",
+      "maincand_0148",
+      "maincand_0192",
+      "maincand_0197",
+      "maincand_0199",
+      "maincand_0208",
+      "maincand_0210",
+      "maincand_0215",
+      "maincand_0216",
+      "maincand_0223",
+      "maincand_0226",
+      "maincand_0231",
+      "maincand_0273",
+      "maincand_0281",
+      "maincand_0283",
+      "maincand_0288"
+    ],
+    "shared_by_all_four_candidate_ids": [
+      "maincand_0022",
+      "maincand_0041",
+      "maincand_0057",
+      "maincand_0076",
+      "maincand_0103",
+      "maincand_0127",
+      "maincand_0134",
+      "maincand_0135",
+      "maincand_0208",
+      "maincand_0215",
+      "maincand_0216",
+      "maincand_0223",
+      "maincand_0226",
+      "maincand_0231"
+    ],
+    "candidate_to_models": {
+      "maincand_0022": [
+        "qwen3_vl_8b_instruct",
+        "internvl3_5_8b_instruct",
+        "gemma3_12b_it",
+        "llava_onevision2_8b_instruct"
+      ],
+      "maincand_0026": [
+        "gemma3_12b_it"
+      ],
+      "maincand_0034": [
+        "qwen3_vl_8b_instruct",
+        "gemma3_12b_it",
+        "llava_onevision2_8b_instruct"
+      ],
+      "maincand_0041": [
+        "qwen3_vl_8b_instruct",
+        "internvl3_5_8b_instruct",
+        "gemma3_12b_it",
+        "llava_onevision2_8b_instruct"
+      ],
+      "maincand_0057": [
+        "qwen3_vl_8b_instruct",
+        "internvl3_5_8b_instruct",
+        "gemma3_12b_it",
+        "llava_onevision2_8b_instruct"
+      ],
+      "maincand_0058": [
+        "qwen3_vl_8b_instruct"
+      ],
+      "maincand_0059": [
+        "qwen3_vl_8b_instruct",
+        "gemma3_12b_it"
+      ],
+      "maincand_0069": [
+        "internvl3_5_8b_instruct",
+        "gemma3_12b_it",
+        "llava_onevision2_8b_instruct"
+      ],
+      "maincand_0070": [
+        "qwen3_vl_8b_instruct",
+        "internvl3_5_8b_instruct"
+      ],
+      "maincand_0076": [
+        "qwen3_vl_8b_instruct",
+        "internvl3_5_8b_instruct",
+        "gemma3_12b_it",
+        "llava_onevision2_8b_instruct"
+      ],
+      "maincand_0079": [
+        "gemma3_12b_it"
+      ],
+      "maincand_0089": [
+        "qwen3_vl_8b_instruct",
+        "internvl3_5_8b_instruct",
+        "llava_onevision2_8b_instruct"
+      ],
+      "maincand_0098": [
+        "gemma3_12b_it"
+      ],
+      "maincand_0103": [
+        "qwen3_vl_8b_instruct",
+        "internvl3_5_8b_instruct",
+        "gemma3_12b_it",
+        "llava_onevision2_8b_instruct"
+      ],
+      "maincand_0104": [
+        "qwen3_vl_8b_instruct",
+        "gemma3_12b_it"
+      ],
+      "maincand_0122": [
+        "gemma3_12b_it"
+      ],
+      "maincand_0127": [
+        "qwen3_vl_8b_instruct",
+        "internvl3_5_8b_instruct",
+        "gemma3_12b_it",
+        "llava_onevision2_8b_instruct"
+      ],
+      "maincand_0129": [
+        "llava_onevision2_8b_instruct"
+      ],
+      "maincand_0134": [
+        "qwen3_vl_8b_instruct",
+        "internvl3_5_8b_instruct",
+        "gemma3_12b_it",
+        "llava_onevision2_8b_instruct"
+      ],
+      "maincand_0135": [
+        "qwen3_vl_8b_instruct",
+        "internvl3_5_8b_instruct",
+        "gemma3_12b_it",
+        "llava_onevision2_8b_instruct"
+      ],
+      "maincand_0136": [
+        "qwen3_vl_8b_instruct",
+        "internvl3_5_8b_instruct",
+        "llava_onevision2_8b_instruct"
+      ],
+      "maincand_0139": [
+        "internvl3_5_8b_instruct"
+      ],
+      "maincand_0147": [
+        "qwen3_vl_8b_instruct",
+        "internvl3_5_8b_instruct",
+        "gemma3_12b_it"
+      ],
+      "maincand_0148": [
+        "qwen3_vl_8b_instruct",
+        "internvl3_5_8b_instruct",
+        "llava_onevision2_8b_instruct"
+      ],
+      "maincand_0161": [
+        "gemma3_12b_it"
+      ],
+      "maincand_0164": [
+        "gemma3_12b_it"
+      ],
+      "maincand_0175": [
+        "gemma3_12b_it"
+      ],
+      "maincand_0192": [
+        "internvl3_5_8b_instruct",
+        "gemma3_12b_it"
+      ],
+      "maincand_0197": [
+        "qwen3_vl_8b_instruct",
+        "llava_onevision2_8b_instruct"
+      ],
+      "maincand_0199": [
+        "qwen3_vl_8b_instruct",
+        "internvl3_5_8b_instruct"
+      ],
+      "maincand_0201": [
+        "gemma3_12b_it"
+      ],
+      "maincand_0208": [
+        "qwen3_vl_8b_instruct",
+        "internvl3_5_8b_instruct",
+        "gemma3_12b_it",
+        "llava_onevision2_8b_instruct"
+      ],
+      "maincand_0210": [
+        "qwen3_vl_8b_instruct",
+        "internvl3_5_8b_instruct"
+      ],
+      "maincand_0215": [
+        "qwen3_vl_8b_instruct",
+        "internvl3_5_8b_instruct",
+        "gemma3_12b_it",
+        "llava_onevision2_8b_instruct"
+      ],
+      "maincand_0216": [
+        "qwen3_vl_8b_instruct",
+        "internvl3_5_8b_instruct",
+        "gemma3_12b_it",
+        "llava_onevision2_8b_instruct"
+      ],
+      "maincand_0223": [
+        "qwen3_vl_8b_instruct",
+        "internvl3_5_8b_instruct",
+        "gemma3_12b_it",
+        "llava_onevision2_8b_instruct"
+      ],
+      "maincand_0226": [
+        "qwen3_vl_8b_instruct",
+        "internvl3_5_8b_instruct",
+        "gemma3_12b_it",
+        "llava_onevision2_8b_instruct"
+      ],
+      "maincand_0231": [
+        "qwen3_vl_8b_instruct",
+        "internvl3_5_8b_instruct",
+        "gemma3_12b_it",
+        "llava_onevision2_8b_instruct"
+      ],
+      "maincand_0236": [
+        "gemma3_12b_it"
+      ],
+      "maincand_0246": [
+        "gemma3_12b_it"
+      ],
+      "maincand_0249": [
+        "internvl3_5_8b_instruct"
+      ],
+      "maincand_0257": [
+        "llava_onevision2_8b_instruct"
+      ],
+      "maincand_0273": [
+        "qwen3_vl_8b_instruct",
+        "internvl3_5_8b_instruct",
+        "gemma3_12b_it"
+      ],
+      "maincand_0274": [
+        "llava_onevision2_8b_instruct"
+      ],
+      "maincand_0275": [
+        "gemma3_12b_it"
+      ],
+      "maincand_0276": [
+        "llava_onevision2_8b_instruct"
+      ],
+      "maincand_0281": [
+        "qwen3_vl_8b_instruct",
+        "gemma3_12b_it",
+        "llava_onevision2_8b_instruct"
+      ],
+      "maincand_0283": [
+        "qwen3_vl_8b_instruct",
+        "gemma3_12b_it"
+      ],
+      "maincand_0288": [
+        "qwen3_vl_8b_instruct",
+        "internvl3_5_8b_instruct",
+        "llava_onevision2_8b_instruct"
+      ]
+    }
+  },
+  "edited_binding_error": {
+    "model_count_distribution": {
+      "0": {
+        "n": 71,
+        "denominator": 91,
+        "percent": 78.02197802197803
+      },
+      "1": {
+        "n": 13,
+        "denominator": 91,
+        "percent": 14.285714285714285
+      },
+      "2": {
+        "n": 3,
+        "denominator": 91,
+        "percent": 3.296703296703297
+      },
+      "3": {
+        "n": 4,
+        "denominator": 91,
+        "percent": 4.395604395604396
+      },
+      "4": {
+        "n": 0,
+        "denominator": 91,
+        "percent": 0.0
+      }
+    },
+    "shared_by_two_or_more_candidate_ids": [
+      "maincand_0059",
+      "maincand_0076",
+      "maincand_0089",
+      "maincand_0098",
+      "maincand_0148",
+      "maincand_0208",
+      "maincand_0257"
+    ],
+    "shared_by_all_four_candidate_ids": [],
+    "candidate_to_models": {
+      "maincand_0008": [
+        "gemma3_12b_it"
+      ],
+      "maincand_0034": [
+        "qwen3_vl_8b_instruct"
+      ],
+      "maincand_0057": [
+        "gemma3_12b_it"
+      ],
+      "maincand_0059": [
+        "internvl3_5_8b_instruct",
+        "gemma3_12b_it",
+        "llava_onevision2_8b_instruct"
+      ],
+      "maincand_0069": [
+        "gemma3_12b_it"
+      ],
+      "maincand_0076": [
+        "qwen3_vl_8b_instruct",
+        "internvl3_5_8b_instruct"
+      ],
+      "maincand_0089": [
+        "qwen3_vl_8b_instruct",
+        "gemma3_12b_it"
+      ],
+      "maincand_0098": [
+        "qwen3_vl_8b_instruct",
+        "internvl3_5_8b_instruct",
+        "gemma3_12b_it"
+      ],
+      "maincand_0103": [
+        "qwen3_vl_8b_instruct"
+      ],
+      "maincand_0148": [
+        "internvl3_5_8b_instruct",
+        "gemma3_12b_it"
+      ],
+      "maincand_0192": [
+        "gemma3_12b_it"
+      ],
+      "maincand_0208": [
+        "qwen3_vl_8b_instruct",
+        "gemma3_12b_it",
+        "llava_onevision2_8b_instruct"
+      ],
+      "maincand_0210": [
+        "gemma3_12b_it"
+      ],
+      "maincand_0216": [
+        "gemma3_12b_it"
+      ],
+      "maincand_0223": [
+        "gemma3_12b_it"
+      ],
+      "maincand_0242": [
+        "gemma3_12b_it"
+      ],
+      "maincand_0257": [
+        "qwen3_vl_8b_instruct",
+        "gemma3_12b_it",
+        "llava_onevision2_8b_instruct"
+      ],
+      "maincand_0273": [
+        "internvl3_5_8b_instruct"
+      ],
+      "maincand_0276": [
+        "internvl3_5_8b_instruct"
+      ],
+      "maincand_0283": [
+        "llava_onevision2_8b_instruct"
+      ]
+    }
+  },
+  "all_pass": {
+    "model_count_distribution": {
+      "0": {
+        "n": 33,
+        "denominator": 91,
+        "percent": 36.26373626373626
+      },
+      "1": {
+        "n": 7,
+        "denominator": 91,
+        "percent": 7.6923076923076925
+      },
+      "2": {
+        "n": 9,
+        "denominator": 91,
+        "percent": 9.89010989010989
+      },
+      "3": {
+        "n": 20,
+        "denominator": 91,
+        "percent": 21.978021978021978
+      },
+      "4": {
+        "n": 22,
+        "denominator": 91,
+        "percent": 24.175824175824175
+      }
+    },
+    "shared_by_two_or_more_candidate_ids": [
+      "maincand_0001",
+      "maincand_0002",
+      "maincand_0008",
+      "maincand_0026",
+      "maincand_0058",
+      "maincand_0079",
+      "maincand_0094",
+      "maincand_0101",
+      "maincand_0104",
+      "maincand_0107",
+      "maincand_0108",
+      "maincand_0114",
+      "maincand_0120",
+      "maincand_0122",
+      "maincand_0129",
+      "maincand_0139",
+      "maincand_0146",
+      "maincand_0150",
+      "maincand_0153",
+      "maincand_0161",
+      "maincand_0164",
+      "maincand_0168",
+      "maincand_0172",
+      "maincand_0174",
+      "maincand_0175",
+      "maincand_0185",
+      "maincand_0192",
+      "maincand_0198",
+      "maincand_0199",
+      "maincand_0201",
+      "maincand_0202",
+      "maincand_0209",
+      "maincand_0227",
+      "maincand_0228",
+      "maincand_0234",
+      "maincand_0235",
+      "maincand_0236",
+      "maincand_0241",
+      "maincand_0246",
+      "maincand_0248",
+      "maincand_0249",
+      "maincand_0254",
+      "maincand_0256",
+      "maincand_0267",
+      "maincand_0271",
+      "maincand_0274",
+      "maincand_0275",
+      "maincand_0282",
+      "maincand_0284",
+      "maincand_0286",
+      "maincand_0289"
+    ],
+    "shared_by_all_four_candidate_ids": [
+      "maincand_0001",
+      "maincand_0002",
+      "maincand_0094",
+      "maincand_0101",
+      "maincand_0107",
+      "maincand_0108",
+      "maincand_0114",
+      "maincand_0146",
+      "maincand_0150",
+      "maincand_0153",
+      "maincand_0168",
+      "maincand_0174",
+      "maincand_0185",
+      "maincand_0198",
+      "maincand_0202",
+      "maincand_0209",
+      "maincand_0234",
+      "maincand_0241",
+      "maincand_0248",
+      "maincand_0256",
+      "maincand_0286",
+      "maincand_0289"
+    ],
+    "candidate_to_models": {
+      "maincand_0001": [
+        "qwen3_vl_8b_instruct",
+        "internvl3_5_8b_instruct",
+        "gemma3_12b_it",
+        "llava_onevision2_8b_instruct"
+      ],
+      "maincand_0002": [
+        "qwen3_vl_8b_instruct",
+        "internvl3_5_8b_instruct",
+        "gemma3_12b_it",
+        "llava_onevision2_8b_instruct"
+      ],
+      "maincand_0008": [
+        "qwen3_vl_8b_instruct",
+        "internvl3_5_8b_instruct",
+        "llava_onevision2_8b_instruct"
+      ],
+      "maincand_0026": [
+        "qwen3_vl_8b_instruct",
+        "internvl3_5_8b_instruct",
+        "llava_onevision2_8b_instruct"
+      ],
+      "maincand_0051": [
+        "internvl3_5_8b_instruct"
+      ],
+      "maincand_0058": [
+        "internvl3_5_8b_instruct",
+        "llava_onevision2_8b_instruct"
+      ],
+      "maincand_0070": [
+        "llava_onevision2_8b_instruct"
+      ],
+      "maincand_0079": [
+        "qwen3_vl_8b_instruct",
+        "internvl3_5_8b_instruct",
+        "llava_onevision2_8b_instruct"
+      ],
+      "maincand_0094": [
+        "qwen3_vl_8b_instruct",
+        "internvl3_5_8b_instruct",
+        "gemma3_12b_it",
+        "llava_onevision2_8b_instruct"
+      ],
+      "maincand_0101": [
+        "qwen3_vl_8b_instruct",
+        "internvl3_5_8b_instruct",
+        "gemma3_12b_it",
+        "llava_onevision2_8b_instruct"
+      ],
+      "maincand_0104": [
+        "internvl3_5_8b_instruct",
+        "llava_onevision2_8b_instruct"
+      ],
+      "maincand_0107": [
+        "qwen3_vl_8b_instruct",
+        "internvl3_5_8b_instruct",
+        "gemma3_12b_it",
+        "llava_onevision2_8b_instruct"
+      ],
+      "maincand_0108": [
+        "qwen3_vl_8b_instruct",
+        "internvl3_5_8b_instruct",
+        "gemma3_12b_it",
+        "llava_onevision2_8b_instruct"
+      ],
+      "maincand_0114": [
+        "qwen3_vl_8b_instruct",
+        "internvl3_5_8b_instruct",
+        "gemma3_12b_it",
+        "llava_onevision2_8b_instruct"
+      ],
+      "maincand_0120": [
+        "qwen3_vl_8b_instruct",
+        "internvl3_5_8b_instruct"
+      ],
+      "maincand_0122": [
+        "qwen3_vl_8b_instruct",
+        "internvl3_5_8b_instruct",
+        "llava_onevision2_8b_instruct"
+      ],
+      "maincand_0129": [
+        "qwen3_vl_8b_instruct",
+        "internvl3_5_8b_instruct"
+      ],
+      "maincand_0139": [
+        "qwen3_vl_8b_instruct",
+        "gemma3_12b_it",
+        "llava_onevision2_8b_instruct"
+      ],
+      "maincand_0146": [
+        "qwen3_vl_8b_instruct",
+        "internvl3_5_8b_instruct",
+        "gemma3_12b_it",
+        "llava_onevision2_8b_instruct"
+      ],
+      "maincand_0147": [
+        "llava_onevision2_8b_instruct"
+      ],
+      "maincand_0150": [
+        "qwen3_vl_8b_instruct",
+        "internvl3_5_8b_instruct",
+        "gemma3_12b_it",
+        "llava_onevision2_8b_instruct"
+      ],
+      "maincand_0153": [
+        "qwen3_vl_8b_instruct",
+        "internvl3_5_8b_instruct",
+        "gemma3_12b_it",
+        "llava_onevision2_8b_instruct"
+      ],
+      "maincand_0161": [
+        "qwen3_vl_8b_instruct",
+        "internvl3_5_8b_instruct",
+        "llava_onevision2_8b_instruct"
+      ],
+      "maincand_0164": [
+        "qwen3_vl_8b_instruct",
+        "internvl3_5_8b_instruct",
+        "llava_onevision2_8b_instruct"
+      ],
+      "maincand_0168": [
+        "qwen3_vl_8b_instruct",
+        "internvl3_5_8b_instruct",
+        "gemma3_12b_it",
+        "llava_onevision2_8b_instruct"
+      ],
+      "maincand_0172": [
+        "qwen3_vl_8b_instruct",
+        "llava_onevision2_8b_instruct"
+      ],
+      "maincand_0174": [
+        "qwen3_vl_8b_instruct",
+        "internvl3_5_8b_instruct",
+        "gemma3_12b_it",
+        "llava_onevision2_8b_instruct"
+      ],
+      "maincand_0175": [
+        "qwen3_vl_8b_instruct",
+        "internvl3_5_8b_instruct",
+        "llava_onevision2_8b_instruct"
+      ],
+      "maincand_0185": [
+        "qwen3_vl_8b_instruct",
+        "internvl3_5_8b_instruct",
+        "gemma3_12b_it",
+        "llava_onevision2_8b_instruct"
+      ],
+      "maincand_0192": [
+        "qwen3_vl_8b_instruct",
+        "llava_onevision2_8b_instruct"
+      ],
+      "maincand_0197": [
+        "internvl3_5_8b_instruct"
+      ],
+      "maincand_0198": [
+        "qwen3_vl_8b_instruct",
+        "internvl3_5_8b_instruct",
+        "gemma3_12b_it",
+        "llava_onevision2_8b_instruct"
+      ],
+      "maincand_0199": [
+        "gemma3_12b_it",
+        "llava_onevision2_8b_instruct"
+      ],
+      "maincand_0201": [
+        "qwen3_vl_8b_instruct",
+        "internvl3_5_8b_instruct",
+        "llava_onevision2_8b_instruct"
+      ],
+      "maincand_0202": [
+        "qwen3_vl_8b_instruct",
+        "internvl3_5_8b_instruct",
+        "gemma3_12b_it",
+        "llava_onevision2_8b_instruct"
+      ],
+      "maincand_0209": [
+        "qwen3_vl_8b_instruct",
+        "internvl3_5_8b_instruct",
+        "gemma3_12b_it",
+        "llava_onevision2_8b_instruct"
+      ],
+      "maincand_0210": [
+        "llava_onevision2_8b_instruct"
+      ],
+      "maincand_0212": [
+        "llava_onevision2_8b_instruct"
+      ],
+      "maincand_0227": [
+        "qwen3_vl_8b_instruct",
+        "internvl3_5_8b_instruct",
+        "llava_onevision2_8b_instruct"
+      ],
+      "maincand_0228": [
+        "qwen3_vl_8b_instruct",
+        "internvl3_5_8b_instruct",
+        "llava_onevision2_8b_instruct"
+      ],
+      "maincand_0234": [
+        "qwen3_vl_8b_instruct",
+        "internvl3_5_8b_instruct",
+        "gemma3_12b_it",
+        "llava_onevision2_8b_instruct"
+      ],
+      "maincand_0235": [
+        "qwen3_vl_8b_instruct",
+        "internvl3_5_8b_instruct",
+        "llava_onevision2_8b_instruct"
+      ],
+      "maincand_0236": [
+        "qwen3_vl_8b_instruct",
+        "internvl3_5_8b_instruct",
+        "llava_onevision2_8b_instruct"
+      ],
+      "maincand_0241": [
+        "qwen3_vl_8b_instruct",
+        "internvl3_5_8b_instruct",
+        "gemma3_12b_it",
+        "llava_onevision2_8b_instruct"
+      ],
+      "maincand_0246": [
+        "qwen3_vl_8b_instruct",
+        "internvl3_5_8b_instruct",
+        "llava_onevision2_8b_instruct"
+      ],
+      "maincand_0248": [
+        "qwen3_vl_8b_instruct",
+        "internvl3_5_8b_instruct",
+        "gemma3_12b_it",
+        "llava_onevision2_8b_instruct"
+      ],
+      "maincand_0249": [
+        "qwen3_vl_8b_instruct",
+        "gemma3_12b_it",
+        "llava_onevision2_8b_instruct"
+      ],
+      "maincand_0254": [
+        "qwen3_vl_8b_instruct",
+        "internvl3_5_8b_instruct"
+      ],
+      "maincand_0256": [
+        "qwen3_vl_8b_instruct",
+        "internvl3_5_8b_instruct",
+        "gemma3_12b_it",
+        "llava_onevision2_8b_instruct"
+      ],
+      "maincand_0267": [
+        "qwen3_vl_8b_instruct",
+        "internvl3_5_8b_instruct",
+        "llava_onevision2_8b_instruct"
+      ],
+      "maincand_0271": [
+        "qwen3_vl_8b_instruct",
+        "internvl3_5_8b_instruct"
+      ],
+      "maincand_0274": [
+        "qwen3_vl_8b_instruct",
+        "internvl3_5_8b_instruct",
+        "gemma3_12b_it"
+      ],
+      "maincand_0275": [
+        "qwen3_vl_8b_instruct",
+        "internvl3_5_8b_instruct",
+        "llava_onevision2_8b_instruct"
+      ],
+      "maincand_0281": [
+        "internvl3_5_8b_instruct"
+      ],
+      "maincand_0282": [
+        "qwen3_vl_8b_instruct",
+        "internvl3_5_8b_instruct",
+        "llava_onevision2_8b_instruct"
+      ],
+      "maincand_0284": [
+        "qwen3_vl_8b_instruct",
+        "internvl3_5_8b_instruct",
+        "gemma3_12b_it"
+      ],
+      "maincand_0286": [
+        "qwen3_vl_8b_instruct",
+        "internvl3_5_8b_instruct",
+        "gemma3_12b_it",
+        "llava_onevision2_8b_instruct"
+      ],
+      "maincand_0289": [
+        "qwen3_vl_8b_instruct",
+        "internvl3_5_8b_instruct",
+        "gemma3_12b_it",
+        "llava_onevision2_8b_instruct"
+      ]
+    }
+  }
+}

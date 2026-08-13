@@ -1,0 +1,19 @@
+# Local / Python
+__pycache__/
+*.py[cod]
+.venv/
+.venv*/
+.env
+.env.*
+.DS_Store
+
+# Local research artifacts
+archive/deprecated/
+archive/development/scripts/setup/download_gqa.py
+
+# Common large/local artifacts that must never be committed
+raw/
+*.pt
+*.pth
+*.ckpt
+*.safetensors

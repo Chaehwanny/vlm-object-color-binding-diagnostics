@@ -1,0 +1,89 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "mask_qc_review_v1.1.schema.json",
+  "title": "Attribute Binding Smoke Mask QC Review v1.1",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schema_version",
+    "mask_test_id",
+    "candidate_id",
+    "object_a_qc",
+    "object_b_qc",
+    "pair_qc",
+    "object_a_mask_status",
+    "object_b_mask_status",
+    "mask_qc_status",
+    "failure_reasons",
+    "mask_failure_reasons",
+    "mask_qc_note",
+    "mask_qc_reviewer",
+    "mask_qc_timestamp",
+    "technical_status_before",
+    "technical_status_after_mask_qc",
+    "technical_status_update_approved"
+  ],
+  "properties": {
+    "schema_version": {"const": "1.1"},
+    "mask_test_id": {"type": "string", "minLength": 1},
+    "candidate_id": {"type": "string", "pattern": "^maincand_[0-9]{4}$"},
+    "object_a_qc": {"$ref": "#/$defs/objectQc"},
+    "object_b_qc": {"$ref": "#/$defs/objectQc"},
+    "pair_qc": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["ab_mask_overlap"],
+      "properties": {
+        "ab_mask_overlap": {"$ref": "#/$defs/status"}
+      }
+    },
+    "object_a_mask_status": {"$ref": "#/$defs/status"},
+    "object_b_mask_status": {"$ref": "#/$defs/status"},
+    "mask_qc_status": {"$ref": "#/$defs/status"},
+    "failure_reasons": {
+      "type": "array",
+      "items": {"type": "string", "minLength": 1},
+      "uniqueItems": true
+    },
+    "mask_failure_reasons": {
+      "type": "array",
+      "items": {"type": "string", "minLength": 1},
+      "uniqueItems": true
+    },
+    "mask_qc_note": {"type": ["string", "null"]},
+    "mask_qc_reviewer": {"type": ["string", "null"]},
+    "mask_qc_timestamp": {"type": ["string", "null"], "format": "date-time"},
+    "technical_status_before": {
+      "enum": ["directly_editable", "segmentation_test_required"]
+    },
+    "technical_status_after_mask_qc": {
+      "enum": ["directly_editable", "segmentation_test_required", "failed_after_test", null]
+    },
+    "technical_status_update_approved": {"type": "boolean"}
+  },
+  "$defs": {
+    "status": {
+      "enum": ["pass", "fail", "human_review", "not_tested"]
+    },
+    "objectQc": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "target_object_coverage",
+        "background_leakage",
+        "non_target_object_inclusion",
+        "thin_structure_preservation",
+        "occlusion_boundary_handling",
+        "object_identity_consistency"
+      ],
+      "properties": {
+        "target_object_coverage": {"$ref": "#/$defs/status"},
+        "background_leakage": {"$ref": "#/$defs/status"},
+        "non_target_object_inclusion": {"$ref": "#/$defs/status"},
+        "thin_structure_preservation": {"$ref": "#/$defs/status"},
+        "occlusion_boundary_handling": {"$ref": "#/$defs/status"},
+        "object_identity_consistency": {"$ref": "#/$defs/status"}
+      }
+    }
+  }
+}

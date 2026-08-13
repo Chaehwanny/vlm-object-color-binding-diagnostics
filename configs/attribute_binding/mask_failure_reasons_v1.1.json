@@ -1,0 +1,28 @@
+{
+  "schema_version": "1.1",
+  "enum_id": "attribute_binding_mask_failure_reasons_v1.1",
+  "failure_reasons": {
+    "target_undercoverage": "A substantial visible part of the intended target is missing.",
+    "target_overcoverage": "The mask extends materially beyond the intended target.",
+    "background_leakage": "Background pixels are materially included in the mask.",
+    "non_target_object_inclusion": "Pixels from another object are materially included.",
+    "thin_structure_loss": "A relevant thin target structure is omitted or broken.",
+    "occlusion_boundary_error": "The visible boundary at an occlusion is assigned incorrectly.",
+    "excessive_ab_overlap": "Object A and B masks overlap beyond the frozen acceptable rule.",
+    "empty_mask": "The generated mask has zero foreground pixels.",
+    "near_empty_mask": "The mask is nonempty but below the configured diagnostic area threshold.",
+    "wrong_object": "The mask selects a different object from the intended target.",
+    "object_identity_inconsistent": "The masked cutout no longer corresponds coherently to the intended object.",
+    "severe_fragmentation": "The target is split into implausible disconnected fragments.",
+    "source_or_bbox_mismatch": "The candidate, source image, object ID, or bounding box is mismatched.",
+    "corrupt_or_unreadable_output": "A required mask, cutout, overlay, or record cannot be read.",
+    "reviewer_disagreement": "Reviewers cannot resolve the mask decision without adjudication.",
+    "other_mask_failure": "A mask failure not covered above; a review note is mandatory."
+  },
+  "rules": {
+    "fail_requires_one_or_more_reason": true,
+    "human_review_may_use_reviewer_disagreement": true,
+    "other_mask_failure_requires_note": true,
+    "automatic_flags_are_not_final_failures": true
+  }
+}

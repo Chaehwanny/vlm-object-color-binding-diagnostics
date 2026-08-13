@@ -1,0 +1,75 @@
+{
+  "schema_version": "1.1",
+  "rule_version": "pre_edit_technical_gate_v1.1",
+  "frozen": true,
+  "frozen_after_subset": "mini",
+  "frozen_before_subset": "completion",
+  "freeze_timestamp": "2026-07-31T21:09:28+09:00",
+  "config_sha256": "3eecc6d468e1fe104b440951962d854a870d61385d2c3bcc0fc50dcfa0ee8176",
+  "config_sha256_basis": "sha256 of UTF-8 json.dumps(ensure_ascii=False, sort_keys=True, separators=(comma,colon)) plus newline after deleting config_sha256",
+  "thresholds": {
+    "selected_color_ratio_min": 0.05,
+    "source_target_hue_distance_min_degrees": 45.0,
+    "low_saturation_ratio_max": 0.50,
+    "reject_on_non_target_mask_inclusion": true
+  },
+  "pixel_selection_definition": {
+    "color_centers_degrees": {
+      "red": 0.0,
+      "yellow": 55.0,
+      "green": 120.0,
+      "blue": 220.0
+    },
+    "source_hue_tolerance_degrees": 55.0,
+    "minimum_saturation_0_255": 45,
+    "minimum_value_0_255": 30,
+    "selected_color_ratio": "count(mask AND circular_distance(pixel_hue, canonical_original_color_center)<=55 AND saturation>=45 AND value>=30) / count(mask)",
+    "low_saturation_ratio": "count(mask AND saturation<45) / count(mask)",
+    "observed_source_hue": "saturation-weighted circular mean hue over selected source-color pixels",
+    "hue_distance": "minimum absolute circular distance in degrees between observed source hues of object A and object B"
+  },
+  "candidate_aggregation": {
+    "object_eligible": "semantic_purity_status is pass AND selected_color_ratio>=0.05 AND pair observed hue distance>=45.0 AND low_saturation_ratio<=0.50",
+    "candidate_pre_edit_eligible": "object_a_eligible AND object_b_eligible",
+    "human_review_blocks_entry": true,
+    "fail_blocks_entry": true,
+    "excluded_candidates_retained_in_attrition": true,
+    "eligible_rows_preserve_reviewed_mask_source_bytes": true,
+    "order": "frozen original subset manifest order"
+  },
+  "semantic_purity": {
+    "allowed_statuses": [
+      "pass",
+      "fail",
+      "human_review",
+      "not_tested"
+    ],
+    "blocking_statuses": [
+      "fail",
+      "human_review",
+      "not_tested"
+    ],
+    "contamination_labels": [
+      "skin",
+      "arm",
+      "hand",
+      "neck",
+      "face",
+      "hair",
+      "adjacent_object",
+      "background_region",
+      "other"
+    ]
+  },
+  "references": {
+    "mini_analysis_document": "docs/protocols/mini_natural_edit_failure_analysis_v1.1.md",
+    "mini_analysis_summary": "processed/attribute_binding/editing_pilot/v1.1/analysis/mini_natural_edit_failure_summary_v1.1.json",
+    "color_swap_config": "configs/attribute_binding/color_swap_v1.1.json"
+  },
+  "post_freeze_policy": {
+    "completion_threshold_changes_allowed": false,
+    "completion_gate_additions_allowed": false,
+    "completion_algorithm_changes_allowed": false,
+    "automatic_metrics_assign_final_qc": false
+  }
+}

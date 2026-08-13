@@ -1,0 +1,38 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "mask_semantic_purity_review_v1.1.schema.json",
+  "title": "Mask Semantic Purity Human Review v1.1",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schema_version", "subset_name", "candidate_id", "object_a_label", "object_b_label",
+    "original_color_a", "original_color_b", "object_a_semantic_purity_status",
+    "object_b_semantic_purity_status", "non_target_inclusion_a", "non_target_inclusion_b",
+    "contamination_labels_a", "contamination_labels_b", "reviewer", "review_timestamp",
+    "review_note", "contact_sheet_path", "contact_sheet_sha256"
+  ],
+  "properties": {
+    "schema_version": {"const": "1.1"},
+    "subset_name": {"type": "string", "minLength": 1},
+    "candidate_id": {"type": "string", "pattern": "^maincand_[0-9]{4}$"},
+    "object_a_label": {"type": "string", "minLength": 1},
+    "object_b_label": {"type": "string", "minLength": 1},
+    "original_color_a": {"enum": ["red", "blue", "green", "yellow"]},
+    "original_color_b": {"enum": ["red", "blue", "green", "yellow"]},
+    "object_a_semantic_purity_status": {"$ref": "#/$defs/status"},
+    "object_b_semantic_purity_status": {"$ref": "#/$defs/status"},
+    "non_target_inclusion_a": {"type": "boolean"},
+    "non_target_inclusion_b": {"type": "boolean"},
+    "contamination_labels_a": {"$ref": "#/$defs/labels"},
+    "contamination_labels_b": {"$ref": "#/$defs/labels"},
+    "reviewer": {"type": ["string", "null"]},
+    "review_timestamp": {"type": ["string", "null"], "format": "date-time"},
+    "review_note": {"type": ["string", "null"]},
+    "contact_sheet_path": {"type": "string", "minLength": 1},
+    "contact_sheet_sha256": {"type": "string", "pattern": "^[a-f0-9]{64}$"}
+  },
+  "$defs": {
+    "status": {"enum": ["pass", "fail", "human_review", "not_tested"]},
+    "labels": {"type": "array", "uniqueItems": true, "items": {"enum": ["skin", "arm", "hand", "neck", "face", "hair", "person_leg", "pants", "shoe", "adjacent_object", "background_region", "other"]}}
+  }
+}
