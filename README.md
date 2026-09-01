@@ -252,3 +252,7 @@ This project was closed in August 2026 after the Primary Natural analysis
 answered the scoped research question. The repository is maintained as a
 technical research archive rather than an active benchmark or ongoing VLM
 project.
+
+## Acknowledgement
+
+This repository was developed with support from the 서울시립대학교 데이터 사이언스 플러스 차세대 융합인재 양성사업단 - http://dsplus.uos.ac.kr/
